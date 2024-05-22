@@ -34,7 +34,7 @@ export default function HomePage() {
             }}
           >
             <Image
-              src="/assets/images/TheFinestDrink.png"
+              src="/assets/images/WelcomeToButtery.jpg"
               width={0}
               height={0}
               sizes="100vw"
@@ -43,7 +43,9 @@ export default function HomePage() {
             <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-50">
               <div
                 className={`${
-                  isMin500px ? "w-2/3 mx-auto" : "w-full px-[30px]"
+                  isMin500px
+                    ? "w-2/3 mx-auto md:w-10/12 lg:w-2/3 2xl:w-2/4"
+                    : "w-full px-[30px]"
                 }  h-full flex justify-center items-center flex-col`}
               >
                 <div className="hidden md:block text-[25px] text-[#c9ab81] text-center text-miniver">
@@ -59,8 +61,8 @@ export default function HomePage() {
                     TEA
                   </span>
                   <span>
-                    "Buttery cares about your health" / Buttery quan tâm đến sức
-                    khỏe của bạn.
+                    "<b>Buttery cares about your health</b>" Buttery quan tâm
+                    đến sức khỏe của bạn.
                   </span>
                 </div>
                 {/* <button className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5">
@@ -84,24 +86,29 @@ export default function HomePage() {
             <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
               <div
                 className={`${
-                  isMin500px ? "w-2/3 mx-auto" : "w-full px-[30px]"
+                  isMin500px
+                    ? "w-2/3 mx-auto md:w-11/12 2xl:w-2/4"
+                    : "w-full px-[30px]"
                 }  h-full flex justify-center items-center flex-col`}
               >
                 <div className="hidden md:block text-[25px] text-[#c9ab81] text-center text-miniver">
-                  Take a trip to our selection/ Khám phá những hương vị của
-                  chúng tôi
+                  Enjoy Life, Eat Cake
                 </div>
                 <div className="text-[42px] md:text-[75px] text-[#c9ab81]  text-center text-metro">
-                  WELCOME TO BUTTERY
+                  PATISSERIE HAVEN / PASTRY PARADISE
                 </div>
                 <div className="mt-3 flex flex-col text-white text-[20px] sm:text-[24px] justify-center items-center text-center leading-[33px]">
                   <span>
-                    PASTRY | CAFE | PATISSERIE | BRUNCH | CATERING | AFTERNOON
-                    TEA
+                    <b>
+                      <i>Awaken Your Senses</i>
+                    </b>{" "}
+                    - Explore Our World of Exquisite Drinks.
                   </span>
                   <span>
-                    "Buttery cares about your health" / Buttery quan tâm đến sức
-                    khỏe của bạn.
+                    Từ những chiếc bánh thơm ngon cho đến những ly thức uống
+                    được pha chế tỉ mỉ, Buttery Cake & Cafe tự hào mang đến một
+                    trải nghiệm vô cùng mới lạ và độc đáo, mỗi hương vị đều là
+                    một niềm vui cho vị giác của bạn
                   </span>
                 </div>
                 {/* <button className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5">
@@ -125,7 +132,9 @@ export default function HomePage() {
             <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
               <div
                 className={`${
-                  isMin500px ? "w-2/3 mx-auto" : "w-full px-[30px]"
+                  isMin500px
+                    ? "w-2/3 mx-auto md:w-11/12 2xl:w-2/4"
+                    : "w-full px-[30px]"
                 }  h-full flex justify-center items-center flex-col`}
               >
                 <div className="hidden md:block text-[25px] text-[#c9ab81] text-center text-miniver">
@@ -137,12 +146,17 @@ export default function HomePage() {
                 </div>
                 <div className="mt-3 flex flex-col text-white text-[20px] sm:text-[24px] justify-center items-center text-center leading-[33px]">
                   <span>
-                    PASTRY | CAFE | PATISSERIE | BRUNCH | CATERING | AFTERNOON
-                    TEA
+                    <b>
+                      <i>Taste the Difference: Buttery’s Cake Journey</i>
+                    </b>
                   </span>
                   <span>
-                    "Buttery cares about your health" / Buttery quan tâm đến sức
-                    khỏe của bạn.
+                    Được truyền cảm hứng bởi phong cách sống hiện đại và mong
+                    muốn truyền tinh thần "thưởng thức một buổi trà bánh - một
+                    bữa ăn ngon: là một cách để tận hưởng cuộc sống mỗi ngày đến
+                    với khách hàng, Buttery đặt tâm huyết của mình không chỉ
+                    trong từng sản phẩm mà còn trong cả hành trình trải nghiệm
+                    trọn vẹn của khách hàng.
                   </span>
                 </div>
                 {/* <button className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5">
@@ -418,7 +432,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 gap-y-[30px] lg:grid-cols-2 gap-y-[30px] gap-x-[30px]">
           <div>
             <Image
-              src="/assets/images/TropicalSummer.png"
+              src="/assets/images/PinkPataya.png"
               width={0}
               height={0}
               sizes="100vw"
@@ -427,7 +441,7 @@ export default function HomePage() {
           </div>
           <div>
             <Image
-              src="/assets/images/PinkPataya.png"
+              src="/assets/images/TropicalSummer.png"
               width={0}
               height={0}
               sizes="100vw"
