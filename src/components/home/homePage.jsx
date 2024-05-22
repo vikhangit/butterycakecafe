@@ -220,10 +220,10 @@ export default function HomePage() {
           </div>
           <div className="text-[19px] text-white leading-normal text-center mt-[20px]">
             Life is like coffee, the darker it gets, the more it energize <br />{" "}
-            <br /> <b>BLACK COFFEE</b> (Cà Phê Đá) - <b>50</b> <br />{" "}
-            <b> MILK COFFEE</b> (Cà Phê Sữa Đá) - <b>50</b> <br />{" "}
-            <b>CAPPUCCINO</b> (Cà Phê Espresso, sữa tươi, váng sữa) - <b>50</b>
-            <br /> <b>LATTE</b> (Cà phê Espresso, sữa tươi, váng sữa) -{" "}
+            <br /> <b>BLACK COFFEE</b> (Cà Phê Đá) ─ <b>50</b> <br />{" "}
+            <b> MILK COFFEE</b> (Cà Phê Sữa Đá) ─ <b>50</b> <br />{" "}
+            <b>CAPPUCCINO</b> (Cà Phê Espresso, sữa tươi, váng sữa) ─ <b>50</b>
+            <br /> <b>LATTE</b> (Cà phê Espresso, sữa tươi, váng sữa) ─{" "}
             <b>50</b>
           </div>
         </div>
@@ -423,8 +423,9 @@ export default function HomePage() {
             mới mà còn đầy ắp vitamin và khoáng chất. Với Buttery, mỗi ngụm thức
             uống là một lời nhắc nhở về lựa chọn lành mạnh cho cơ thể bạn.{" "}
             <br />
-            <br />─ <b>PINK PATAYA</b> (Thanh long đỏ, Chuối, Sữa chua, Cam
-            Vàng, Dâu tây, Yến mạch, Hạt chia) ─ <b>50</b> <br /> ─
+            <br />
+            <b>PINK PATAYA</b> (Thanh long đỏ, Chuối, Sữa chua, Cam Vàng, Dâu
+            tây, Yến mạch, Hạt chia) ─ <b>50</b> <br />
             <b>TROPICAL SUMMER</b> ( Chuối, Xoài, Thơm, Chanh Dây, Sữa chua, Yến
             mạch, Hạt chia) ─ <b>50</b>
           </div>
@@ -808,13 +809,15 @@ export default function HomePage() {
             </svg>
           </div>
           <div className="text-[19px] text-white leading-normal text-center mt-[20px]">
-            ─ <b>PANDAN COCOMLIK</b> (Cà phê Espresso, Sữa lá dứa, Kem muối) -{" "}
+            <b>PANDAN COCOMLIK</b> (Cà phê Espresso, Sữa lá dứa, Kem muối) ─{" "}
             <b>50</b>
-            <br />─ <b>CHOCO DOLCE</b>(Cà phê hạt Espresso, Chocolate, Sữa tươi,
-            Quế) - <b>50</b>
-            <br />─ <b> DALGONA COFFEE</b> (Cà phê hạt Espresso, Sữa tươi,
-            Dalgona) - <b>50</b>
-            <br />─ <b>OREO MINT</b> (Chocolate, Sữa tươi, Kem muối) - <b>50</b>
+            <br />
+            <b>CHOCO DOLCE</b>(Cà phê hạt Espresso, Chocolate, Sữa tươi, Quế) ─{" "}
+            <b>50</b>
+            <br />
+            <b> DALGONA COFFEE</b> (Cà phê hạt Espresso, Sữa tươi, Dalgona) ─{" "}
+            <b>50</b>
+            <br /> <b>OREO MINT</b> (Chocolate, Sữa tươi, Kem muối) ─ <b>50</b>
           </div>
         </div>
         <div>
@@ -890,9 +893,9 @@ export default function HomePage() {
             <br />
             <br />
             <Link href={"tel:0878929899"} target="_blank">
-              HOTLINE: 087-8929-899
+              HOTLINE: 087.8929.899
             </Link>{" "}
-            <br /> OPENING HOUR: 8:30 - 22:00
+            <br /> OPENING HOUR: 8:30 ─ 22:00
           </div>
           <div className="mt-[20px] flex justify-center items-center gap-x-4 text-[20px]">
             <Link
