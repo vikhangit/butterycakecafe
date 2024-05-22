@@ -1,0 +1,57 @@
+/* styles.css */
+header {
+	background-color: #fff;
+	position: fixed;
+	top: -96px;
+	left: 0;
+	right: 0;
+	transition: top 0.3s;
+	z-index: 999;
+}
+
+header.visible {
+	top: 0;
+}
+
+@media screen and (max-width: 1023px) {
+	header {
+		top: 0;
+	}
+}
+
+.line_follow {
+	position: absolute;
+	left: 80px;
+	top: 0;
+	height: 0;
+	border-top: 3px solid transparent;
+	transition: width 0.4s, left 0.6s cubic-bezier(0.25, 0.1, 0.11, 0.99);
+	border-top-color: #c4996d;
+	width: 70px;
+}
+@media screen and (max-width: 1280px) {
+	.line_follow {
+		left: 16px;
+	}
+}
+
+.box_leftmenu_mobile {
+	::-webkit-scrollbar {
+		width: 0; /* width of the vertical scrollbar */
+	}
+	ul {
+		border-inline-end: none !important;
+	}
+}
+
+.box_search {
+	input {
+		&:hover {
+			border-color: white;
+		}
+		&:focus {
+			border-color: white;
+		}
+		padding: 8px;
+	}
+}
