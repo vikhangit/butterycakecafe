@@ -7,12 +7,14 @@ const nextConfig = {
 		includePaths: [path.join(__dirname, "styles")],
 	},
 	images: {
-		domains: [
-			"api.fostech.vn",
-			"client-dentist.vercel.app",
-			"api.goodapp.vn",
-		],
-	},
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'http://103.98.160.198:2211',
+        pathname: '**',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
