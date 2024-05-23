@@ -18,7 +18,7 @@ dayjs.locale("vi"); // use locale globally
 dayjs().locale("vi").format(); // use locale in a specific instance
 
 export const metadata = {
-  metadataBase: new URL("https://client-dentist.vercel.app"),
+  metadataBase: new URL("https://butterycakecafe.com"),
   title: "Buttery Cake & Cafe",
   description: "Buttery Cake & Cafe",
   openGraph: {
@@ -26,7 +26,7 @@ export const metadata = {
     description: "Buttery Cake & Cafe",
     type: "article",
     publishedTime: "2023-05-20",
-    url: "https://client-dentist.vercel.app",
+    url: "https://butterycakecafe.com",
     // images:
     //   "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslider-5.effaeb75.png&w=3840&q=75",
   },

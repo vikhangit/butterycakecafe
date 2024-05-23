@@ -8,6 +8,7 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { PiTiktokLogo } from "react-icons/pi";
+import { HiChevronUp } from "react-icons/hi2";
 
 export default function HomePage() {
   const isMin500px = useMediaQuery({ minWidth: 500 });
@@ -938,6 +939,10 @@ export default function HomePage() {
           />
         </div>
       </div>
+
+      <button className="fixed bottom-2 right-2">
+        <HiChevronUp />
+      </button>
     </div>
   );
 }
