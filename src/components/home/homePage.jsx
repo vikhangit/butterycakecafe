@@ -12,7 +12,7 @@ import { PiTiktokLogo } from "react-icons/pi";
 export default function HomePage() {
   const isMin500px = useMediaQuery({ minWidth: 500 });
   return (
-    <div className="bg-[#0b1315]">
+    <div className="bg-[#0b1315] pb-[50px] lg:pb-[100px]">
       <div id="intro">
         <Swiper
           // install Swiper modules
@@ -266,7 +266,7 @@ export default function HomePage() {
                 d="M40.881.591L20.562 8.576.243.591"
               ></path>
             </svg>
-            <div className="w-[150px] sm:w-auto uppercase text-center">
+            <div className="w-[200px] sm:w-auto uppercase text-center">
               COLD BREW
             </div>
             <svg
