@@ -44,7 +44,7 @@ export default function HomePage() {
               <div
                 className={`${
                   isMin500px
-                    ? "w-2/3 mx-auto md:w-10/12 lg:w-2/3 2xl:w-2/4"
+                    ? "w-2/3 mx-auto md:w-9/12 xl:w-2/3 2xl:w-2/4"
                     : "w-full px-[30px]"
                 }  h-full flex justify-center items-center flex-col`}
               >
@@ -470,12 +470,12 @@ export default function HomePage() {
           <div className=" mt-[50px] text-white text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
             TROPICAL ICED TEA POT
           </div>
-          <div className="text-[19px] text-[#c9ab81] leading-normal text-center mt-[10px] text-miniver">
-            Pandan Longan (Trà lài, nhãn, lá dứa) <br /> Lychee Rose (Trà lài,
-            thanh long đỏ, vải) <br /> Double Tropical (Trà lài, thowmm, chanh
-            dây, mứt xoài)
+          <div className="text-[19px] text-[#c9ab81] leading-normal text-center mt-[10px] ">
+            <b>Pandan Longan</b> (Trà lài, nhãn, lá dứa) <br />{" "}
+            <b>Lychee Rose</b> (Trà lài, thanh long đỏ, vải) <br />{" "}
+            <b>Double Tropical</b> (Trà lài, thowmm, chanh dây, mứt xoài)
           </div>
-          <div className="text-white text-[19px] text-center mt-[10px]">
+          <div className="text-white text-[19px] text-center mt-[10px] text-miniver">
             210k+
           </div>
         </div>
