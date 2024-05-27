@@ -385,14 +385,18 @@ export default function HomePage() {
         <div
           className={`${
             isMin500px
-              ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4"
+              ? "w-full mx-auto lg:w-11/12 2xl:w-3/4"
               : "w-full lg:px-[30px]"
           } mt-[100px] grid grid-cols-1 lg:grid-cols-2 grid-flow-dense gap-y-[50px] gap-x-[50px]`}
           style={{
             direction: "rtl",
           }}
         >
-          <div className="flex flex-col justify-center px-[30px] lg:px-0">
+          <div
+            className={`flex flex-col justify-center ${
+              isMin500px ? "w-2/3 lg:w-full" : "w-full px-[30px]"
+            } mx-auto`}
+          >
             <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
               Where Coffee Meet Creativy
             </div>
@@ -733,11 +737,15 @@ export default function HomePage() {
         <div
           className={`${
             isMin500px
-              ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4"
-              : "w-full px-[30px]"
+              ? "w-full mx-auto lg:w-11/12 2xl:w-3/4"
+              : "w-full lg:px-[30px]"
           } mt-[100px] grid grid-cols-1 gap-y-[50px] gap-x-[50px]`}
         >
-          <div>
+          <div
+            className={`flex flex-col justify-center ${
+              isMin500px ? "w-2/3 lg:w-full" : "w-full px-[30px]"
+            } mx-auto`}
+          >
             <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
               Healthy Special
             </div>
@@ -782,7 +790,7 @@ export default function HomePage() {
         <div
           className={`grid grid-cols-1 gap-y-[50px] lg:grid-cols-2 gap-y-[50px] gap-x-[30px] mt-[30px] ${
             isMin500px
-              ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4"
+              ? "w-full mx-auto lg:w-11/12 2xl:w-3/4"
               : "w-full lg:px-[30px]"
           }`}
         >
@@ -1575,7 +1583,7 @@ export default function HomePage() {
       </div>
 
       <button
-        className="fixed bottom-[50px] right-[50px] text-[#C9AB81] border border-[#C9AB81] rounded-full p-2 z-[9999999]"
+        className="fixed bottom-[20px] right-[20px]  md:bottom-[50px] md:right-[50px] text-[#C9AB81] border border-[#C9AB81] rounded-full p-2 z-[9999999]"
         style={{ display: visible ? "" : "none" }}
         onClick={scrollToTop}
       >
