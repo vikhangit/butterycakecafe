@@ -180,6 +180,429 @@ export default function HomePage() {
       </div>
 
       <div
+        id="cake"
+        className={`${
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
+        } mt-[100px] flex items-start flex-col lg:flex-row-reverse gap-y-[50px] gap-x-[50px]`}
+      >
+        <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
+          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            Enjoy Life, Eat Cake
+          </div>
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+            <div className="uppercase text-center">PASTRY PARADISE</div>
+          </div>
+          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Black Swan</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>250</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge,
+                Gold Leaf
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Tiramisu</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>159</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Black sponge cake, Mascarpone cheese, Kahlua, Coffee and Whipped
+                cream
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Red Velvet</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>159</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Cream cheese, Sponge cake, Whipped cream
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>
+                  Berry <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
+                  Millecrepe
+                </b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>139</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Cherry cream, Berries compote
+              </span>
+            </div>
+            <div>
+              <div className={`flex items-center gap-x-4 whitespace-nowrap`}>
+                <b>
+                  Lychee - Rose <br className="block md:hidden" /> Saint Honore
+                </b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>149</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Jasminie Cream, Rose Jam, Lychee, Rose Cream
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Dream "Mơ"</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>149</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Apricot, Yuzu, Mousse dark choco
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Berry Love</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>149</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Strawberry, Rasberry, Blackberry, White ganache monteé
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Blosom Land</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>149</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Matcha, Rasberry, Hojicha, White choco
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Spring Malibu</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>139</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Malibu, Mango, Pineapple, Coconut, White Chocolate
+              </span>
+            </div>
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Choco Cream</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>120</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Chocolate Sponge Cake, Cranberrry, Fresh Cream
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center w-full lg:w-1/2">
+          <Swiper
+            // install Swiper modules
+            modules={[Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            centeredSlides={true}
+            loop
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/Cake/BlackSwan.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
+                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
+                    <b>OUR SIGNATURE</b>
+                  </div>
+                </div>
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Black Swan</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh handmade tỉ mỉ với lớp lông vũ làm bằng Chocolate, phía
+                trên được đổ lớp Glaze bóng, điểm xuyến bằng nhũ vàng ở cổ
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>250</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/Cake/Tiramisu.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
+                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
+                    <b>BEST SELLER</b>
+                  </div>
+                </div>
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Tiramisu</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Sự kết hợp hoàn hảo giữa "cà phê đậm đà" và "rượu Kahlua", phủ
+                trên nó là "sốt Lava" sánh mịn, là điểm nhấn độc đáo, hòa quyện
+                cùng từng lớp bánh mềm mại
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>159</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/Cake/RedVelvet.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
+                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
+                    <b>BEST SELLER</b>
+                  </div>
+                </div>
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Red Velvet</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Lớp bánh ẩm, mềm, kết hợp với Cream Chesse cùng với sốt Lava tạo
+                nên các tầng hương vị ngọt và béo
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>159</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/BerryMillecrepe.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Berry Millecrepe</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh nổi bật với những lớp crepe mềm tan, đan xen với lớp kem
+                cherry chua ngọt, kết hợp cùng các loại Berries Frozen
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>139</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/Lychee-RoseSaintHonore.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Lychee - Rose Saint Honore</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh được kết hợp với lớp mứt hoa hồng tươi, những cánh hoa được
+                chọn lựa chế biến kỹ càng theo công thức đặc biệt của riêng
+                Buttery. Vị chua ngọt của vải hoa hồng cùng với vẻ đẹp màu hồng
+                nữ tính
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>149</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/DreamMo.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Dream "Mơ"</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh được phủ 1 lớp tráng gương, chua ngọt và thơm ngon, điểm
+                nhấn vài miếng Chocolate vàng kết hợp cùng hoa tươi.
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>149</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/BerryLove.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Berry Love</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh được bao bọc bởi lớp chocolate, phía trên được decor bằng
+                trái cây tươi, những trái berry mọng nước, kết hợp với lớp kem
+                béo và nhân dâu chua chua nhẹ
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>149</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/BlossomLand.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Blosom Land</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Lớp ngoài của bánh được phun bơ Cacao, Matcha Cream đóng vai trò
+                là hương vị nền kết hợp với Rasberry Jam
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>149</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/SpringMalibu.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Spring Malibu</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Là sự kết hợp giữa xoài và thơm, cùng với vị ngọt của rượu
+                Malibu và vị béo của kem. Mềm tan và béo nhẹ, chắc chắn sẽ mang
+                lại trải nghiệm độc đáo cho vị giác
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>139</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/ChocoCream.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Choco Cream</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Với lớp bánh quy Sô-cô-la mềm mịn, điểm xuyến bởi những quả
+                cranberry tươi, phủ trên nó là lớp kem tươi siêu mịn, mang đến
+                hương vị đậm đà và tan chảy trong miệng
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>120</b>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+
+      <div
         id="menu"
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
@@ -1207,430 +1630,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-      <div
-        id="cake"
-        className={`${
-          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
-        } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
-      >
-        <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Enjoy Life, Eat Cake
-          </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className="uppercase text-center">PASTRY PARADISE</div>
-          </div>
-          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Black Swan</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>250</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge,
-                Gold Leaf
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Tiramisu</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>159</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Black sponge cake, Mascarpone cheese, Kahlua, Coffee and Whipped
-                cream
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Red Velvet</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>159</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Cream cheese, Sponge cake, Whipped cream
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>
-                  Berry <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
-                  Millecrepe
-                </b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>139</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Cherry cream, Berries compote
-              </span>
-            </div>
-            <div>
-              <div className={`flex items-center gap-x-4 whitespace-nowrap`}>
-                <b>
-                  Lychee - Rose <br className="block md:hidden" /> Saint Honore
-                </b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>149</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Jasminie Cream, Rose Jam, Lychee, Rose Cream
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Dream "Mơ"</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>149</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Apricot, Yuzu, Mousse dark choco
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Berry Love</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>149</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Strawberry, Rasberry, Blackberry, White ganache monteé
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Blosom Land</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>149</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Matcha, Rasberry, Hojicha, White choco
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Spring Malibu</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>139</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Malibu, Mango, Pineapple, Coconut, White Chocolate
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Choco Cream</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>120</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Chocolate Sponge Cake, Cranberrry, Fresh Cream
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center w-full lg:w-1/2">
-          <Swiper
-            // install Swiper modules
-            modules={[Autoplay]}
-            spaceBetween={50}
-            slidesPerView={1}
-            centeredSlides={true}
-            loop
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-          >
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/Cake/BlackSwan.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
-                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
-                    <b>OUR SIGNATURE</b>
-                  </div>
-                </div>
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Black Swan</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh handmade tỉ mỉ với lớp lông vũ làm bằng Chocolate, phía
-                trên được đổ lớp Glaze bóng, điểm xuyến bằng nhũ vàng ở cổ
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>250</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/Cake/Tiramisu.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
-                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
-                    <b>BEST SELLER</b>
-                  </div>
-                </div>
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Tiramisu</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Sự kết hợp hoàn hảo giữa "cà phê đậm đà" và "rượu Kahlua", phủ
-                trên nó là "sốt Lava" sánh mịn, là điểm nhấn độc đáo, hòa quyện
-                cùng từng lớp bánh mềm mại
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>159</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/Cake/RedVelvet.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
-                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
-                    <b>BEST SELLER</b>
-                  </div>
-                </div>
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Red Velvet</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Lớp bánh ẩm, mềm, kết hợp với Cream Chesse cùng với sốt Lava tạo
-                nên các tầng hương vị ngọt và béo
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>159</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/BerryMillecrepe.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Berry Millecrepe</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh nổi bật với những lớp crepe mềm tan, đan xen với lớp kem
-                cherry chua ngọt, kết hợp cùng các loại Berries Frozen
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>139</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/Lychee-RoseSaintHonore.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Lychee - Rose Saint Honore</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh được kết hợp với lớp mứt hoa hồng tươi, những cánh hoa được
-                chọn lựa chế biến kỹ càng theo công thức đặc biệt của riêng
-                Buttery. Vị chua ngọt của vải hoa hồng cùng với vẻ đẹp màu hồng
-                nữ tính
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>149</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/DreamMo.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Dream "Mơ"</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh được phủ 1 lớp tráng gương, chua ngọt và thơm ngon, điểm
-                nhấn vài miếng Chocolate vàng kết hợp cùng hoa tươi.
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>149</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/BerryLove.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Berry Love</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh được bao bọc bởi lớp chocolate, phía trên được decor bằng
-                trái cây tươi, những trái berry mọng nước, kết hợp với lớp kem
-                béo và nhân dâu chua chua nhẹ
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>149</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/BlossomLand.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Blosom Land</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Lớp ngoài của bánh được phun bơ Cacao, Matcha Cream đóng vai trò
-                là hương vị nền kết hợp với Rasberry Jam
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>149</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/SpringMalibu.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Spring Malibu</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Là sự kết hợp giữa xoài và thơm, cùng với vị ngọt của rượu
-                Malibu và vị béo của kem. Mềm tan và béo nhẹ, chắc chắn sẽ mang
-                lại trải nghiệm độc đáo cho vị giác
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>139</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/ChocoCream.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Choco Cream</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Với lớp bánh quy Sô-cô-la mềm mịn, điểm xuyến bởi những quả
-                cranberry tươi, phủ trên nó là lớp kem tươi siêu mịn, mang đến
-                hương vị đậm đà và tan chảy trong miệng
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>120</b>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div>
-
       <div className="w-full h-[600px] md:h-[800px] relative mt-[50px] md:mt-[100px]">
         <Image
           src="/assets/images/CustomerFeedback.png"
