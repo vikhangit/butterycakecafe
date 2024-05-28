@@ -191,7 +191,7 @@ export default function HomePage() {
                 <b>Black Coffee</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px]"
                 ></div>
                 <span>
                   <b>50</b>
@@ -206,7 +206,7 @@ export default function HomePage() {
                 <b>Milk Coffee</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -219,7 +219,7 @@ export default function HomePage() {
                 <b>White Coffee</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -234,7 +234,7 @@ export default function HomePage() {
                 <b>Salted Coffee</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -253,7 +253,7 @@ export default function HomePage() {
                 <b>Coconut Milk Coffee</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -268,7 +268,7 @@ export default function HomePage() {
                 <b>Truffle Coffee</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -283,7 +283,7 @@ export default function HomePage() {
                 <b>Espresso</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -296,7 +296,7 @@ export default function HomePage() {
                 <b>Americano</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -309,7 +309,7 @@ export default function HomePage() {
                 <b>Cappuccino</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -328,7 +328,7 @@ export default function HomePage() {
                 <b>Cappuccino Oat Milk </b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -343,7 +343,7 @@ export default function HomePage() {
                 <b>Latte</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -358,7 +358,7 @@ export default function HomePage() {
                 <b>Latte Oat milk</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -378,6 +378,27 @@ export default function HomePage() {
             sizes="100vw"
             className="w-full h-full object-cover"
           />
+        </div>
+      </div>
+
+      <div
+        className={`${
+          isMin500px
+            ? "w-full mx-auto lg:w-11/12 2xl:w-3/4"
+            : "w-full lg:px-[30px]"
+        } mt-[100px] h-[600px] md:h-[800px] relative`}
+      >
+        <Image
+          src="/assets/images/Beverage/Lifeislikecoffee.png"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-50">
+          <div className="text-[19px] text-white text-left leading-normal px-[15px] py-[10px]">
+            <b>Life is like coffee, the darker it gets, the more it energize</b>
+          </div>
         </div>
       </div>
 
@@ -409,7 +430,7 @@ export default function HomePage() {
                   <b>Cold Brew</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -422,7 +443,7 @@ export default function HomePage() {
                   <b>Gingerita Zest</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -441,7 +462,7 @@ export default function HomePage() {
                   <b>Coconut Brew Twist </b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -460,7 +481,7 @@ export default function HomePage() {
                   <b>Old-Grey Fashioned</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -477,7 +498,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="h-full">
                 <Image
-                  src="/assets/images/Beverage/Lifeislikecoffee.png"
+                  src="/assets/images/Beverage/CoconutBrewTwist.png"
                   width={0}
                   height={0}
                   sizes="100vw"
@@ -512,7 +533,7 @@ export default function HomePage() {
                 <b>Love In Idleness</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -527,7 +548,7 @@ export default function HomePage() {
                 <b>Cinamon Dolce</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -542,7 +563,7 @@ export default function HomePage() {
                 <b>Sun Rise</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -557,7 +578,7 @@ export default function HomePage() {
                 <b>Basil Smash</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -579,7 +600,7 @@ export default function HomePage() {
                 </b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -592,7 +613,7 @@ export default function HomePage() {
                 <b>Slim Sipper</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -607,7 +628,7 @@ export default function HomePage() {
                 <b>Glowing Essence</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -622,7 +643,7 @@ export default function HomePage() {
                 <b>Lean Libation</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -758,7 +779,7 @@ export default function HomePage() {
                   <b>Pink Pataya</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -774,7 +795,7 @@ export default function HomePage() {
                   <b>Oasis Bliss</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -802,7 +823,7 @@ export default function HomePage() {
               sizes="100vw"
               className="w-full h-full object-cover"
             />
-            <div className="absolute w-full h-full flex justify-center items-end top-0 left-0 bg-black bg-opacity-50">
+            <div className="absolute w-full h-full flex justify-center items-end top-0 left-0">
               <div className="text-[19px] text-white text-left leading-normal px-[15px] py-[10px]">
                 <b>Pink Pataya</b>
               </div>
@@ -816,7 +837,7 @@ export default function HomePage() {
               sizes="100vw"
               className="w-full h-full object-cover"
             />
-            <div className="absolute w-full h-full flex justify-center items-end top-0 left-0 bg-black bg-opacity-50">
+            <div className="absolute w-full h-full flex justify-center items-end top-0 left-0">
               <div className="text-[19px]  text-white text-left leading-normal px-[15px] py-[10px]">
                 <b>Oasis Bliss</b>
               </div>
@@ -890,7 +911,7 @@ export default function HomePage() {
                   <b>Pandan Fores</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -905,7 +926,7 @@ export default function HomePage() {
                   <b>Choco Silk</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -924,7 +945,7 @@ export default function HomePage() {
                   <b>Dalgona Coffee</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -939,7 +960,7 @@ export default function HomePage() {
                   <b>Oreo Mint</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -958,7 +979,7 @@ export default function HomePage() {
                   <b>Milk Tea Blend</b>
                   <div
                     className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                   ></div>
                   <span>
                     <b>50</b>
@@ -1010,7 +1031,7 @@ export default function HomePage() {
                 <b>Lychee Rose</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -1025,7 +1046,7 @@ export default function HomePage() {
                 <b>Pandan Logan</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -1040,7 +1061,7 @@ export default function HomePage() {
                 <b>Double Tropical</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -1094,7 +1115,7 @@ export default function HomePage() {
                 </b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -1113,7 +1134,7 @@ export default function HomePage() {
                 </b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -1135,7 +1156,7 @@ export default function HomePage() {
                 </b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -1150,7 +1171,7 @@ export default function HomePage() {
                 <b>Darjeeling Tea</b>
                 <div
                   className="w-full
-                h-[5px] border-b border-t"
+                h-[5px] "
                 ></div>
                 <span>
                   <b>50</b>
@@ -1506,7 +1527,7 @@ export default function HomePage() {
               target="_blank"
               className="border text-base border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5 uppercase"
             >
-              Gửi đánh giá
+              Đánh giá
             </Link>
           </div>
         </div>
