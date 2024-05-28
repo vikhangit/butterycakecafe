@@ -182,9 +182,7 @@ export default function HomePage() {
       <div
         id="menu"
         className={`${
-          isMin500px
-            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-            : "w-full px-[30px]"
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
@@ -321,7 +319,7 @@ export default function HomePage() {
             </div>
             <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Latte Oat milk</b>
+                <b>Latte Oat Milk</b>
                 <div
                   className="w-full
                 h-[5px] "
@@ -350,9 +348,9 @@ export default function HomePage() {
       <div
         className={`${
           isMin500px
-            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+            ? "mx-auto w-full lg:w-11/12 2xl:w-3/4"
             : "w-full lg:px-[30px]"
-        } mt-[100px] h-[600px] md:h-[800px] relative`}
+        } mt-[100px] relative`}
       >
         <Image
           src="/assets/images/Beverage/Lifeislikecoffee.png"
@@ -363,7 +361,17 @@ export default function HomePage() {
         />
         <div className="absolute w-full h-full top-0 left-0 ">
           <div className="text-[19px] text-white text-left leading-normal px-[15px] py-[10px]">
-            <b>Life is like coffee, the darker it gets, the more it energize</b>
+            <b>
+              Life is like coffee, the darker it gets,
+              <br
+                className={
+                  isMin500px
+                    ? "hidden sm:block lg:hidden"
+                    : "hidden sm:block md:hidden"
+                }
+              />
+              the more it energize
+            </b>
           </div>
         </div>
       </div>
@@ -371,9 +379,7 @@ export default function HomePage() {
       <div>
         <div
           className={`${
-            isMin500px
-              ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-              : "w-full px-[30px]"
+            isMin500px ? "mx-auto w-11/12 2xl:w-3/4" : "w-full px-[30px]"
           } mt-[100px] grid grid-cols-1 lg:grid-cols-2 grid-flow-dense gap-y-[50px] gap-x-[50px]`}
           style={{
             direction: "rtl",
@@ -480,9 +486,7 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px
-            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-            : "w-full px-[30px]"
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]  pb-[120px]`}
       >
         <div className="flex flex-col justify-center items-center">
@@ -524,9 +528,7 @@ export default function HomePage() {
       <div>
         <div
           className={`${
-            isMin500px
-              ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-              : "w-full px-[30px]"
+            isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
           } mt-[100px] grid grid-cols-1 lg:grid-cols-2 grid-flow-dense gap-y-[50px] gap-x-[50px]`}
           style={{
             direction: "rtl",
@@ -699,9 +701,7 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px
-            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-            : "w-full px-[30px]"
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
@@ -950,9 +950,7 @@ export default function HomePage() {
       <div>
         <div
           className={`${
-            isMin500px
-              ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-              : "w-full px-[30px]"
+            isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
           } mt-[100px] grid grid-cols-1 gap-y-[50px] gap-x-[50px]`}
         >
           <div className={`flex flex-col justify-center`}>
@@ -1000,7 +998,7 @@ export default function HomePage() {
         <div
           className={`grid grid-cols-1 gap-y-[50px] lg:grid-cols-2 gap-y-[50px] gap-x-[30px] mt-[30px] ${
             isMin500px
-              ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+              ? "mx-auto w-full lg:w-11/12  2xl:w-3/4"
               : "w-full lg:px-[30px]"
           }`}
         >
@@ -1037,9 +1035,7 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px
-            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-            : "w-full px-[30px]"
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]  pb-[120px]`}
       >
         <div className="flex flex-col justify-center items-center">
@@ -1124,9 +1120,7 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px
-            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-            : "w-full px-[30px]"
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1  gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
@@ -1151,7 +1145,7 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                Trà đen hương hoa nhà
+                Trà đen hương hoa nhài
               </span>
             </div>
             <div>
@@ -1217,9 +1211,7 @@ export default function HomePage() {
       <div
         id="cake"
         className={`${
-          isMin500px
-            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-            : "w-full px-[30px]"
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
@@ -1676,9 +1668,7 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px
-            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
-            : "w-full px-[30px]"
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
