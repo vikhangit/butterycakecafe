@@ -71,11 +71,11 @@ export default function HomePage() {
                     : "w-full px-[30px]"
                 }  h-full flex justify-center items-center flex-col`}
               >
-                <div className="hidden md:block text-[25px] text-[#c9ab81] text-center text-miniver">
+                <div className="hidden md:block text-[25px] text-[#c9ab81] text-center font-normal">
                   PASTRY | CAFE | PATISSERIE | BRUNCH | CATERING | AFTERNOON TEA
                 </div>
-                <div className="text-[42px] md:text-[75px] text-[#c9ab81] text-center text-metro">
-                  BUTTERY'S MENU
+                <div className="text-[42px] md:text-[75px] text-[#c9ab81] text-center">
+                  <b>BUTTERY'S MENU</b>
                 </div>
                 <div className="mt-3 text-white text-[20px] sm:text-[24px] md:text-[24px] justify-center items-center text-center leading-[33px]">
                   "<b>Buttery cares about your health</b>" - Buttery quan tâm
@@ -107,12 +107,12 @@ export default function HomePage() {
                     : "w-full px-[30px]"
                 }  h-full flex justify-center items-center flex-col`}
               >
-                <div className="hidden md:block text-[25px] text-[#c9ab81] text-center text-miniver">
+                <div className="hidden md:block text-[25px] text-[#c9ab81] text-center font-normal">
                   Discover uniqueness, one sip at a time - Mỗi ngụm là một sự
                   độc đáo riêng biệt
                 </div>
-                <div className="text-[42px] md:text-[75px] text-[#c9ab81]  text-center text-metro">
-                  THE FINEST DRINK
+                <div className="text-[42px] md:text-[75px] text-[#c9ab81]  text-center">
+                  <b>THE FINEST DRINK</b>
                 </div>
                 <div className="mt-3 text-white text-[20px] sm:text-[24px] justify-center items-center text-center leading-[33px]">
                   <b>
@@ -120,9 +120,12 @@ export default function HomePage() {
                   </b>{" "}
                   - Explore Our World of Exquisite Drinks.
                 </div>
-                {/* <button className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5">
-                Xem thêm
-              </button> */}
+                <Link
+                  href="#menu"
+                  className="border border-[#c9ab81] texxt text-white text-sm px-[35px] py-[10px] mt-5 text-base uppercase"
+                >
+                  Xem thêm
+                </Link>
               </div>
             </div>
           </SwiperSlide>{" "}
@@ -146,11 +149,11 @@ export default function HomePage() {
                     : "w-full px-[30px]"
                 }  h-full flex justify-center items-center flex-col`}
               >
-                <div className="hidden md:block text-[25px] text-[#c9ab81] text-center text-miniver">
+                <div className="hidden md:block text-[25px] text-[#c9ab81] text-center font-normal">
                   Enjoy Life, Eat Cake
                 </div>
-                <div className="text-[42px] md:text-[75px] text-[#c9ab81] text-center text-metro">
-                  PASTRY PARADISE
+                <div className="text-[42px] md:text-[75px] text-[#c9ab81] text-center">
+                  <b>PASTRY PARADISE</b>
                 </div>
                 <div className="mt-3 flex flex-col text-white text-[20px] sm:text-[24px] justify-center items-center text-center leading-[33px]">
                   <span>
@@ -164,9 +167,12 @@ export default function HomePage() {
                     bữa ăn ngon"
                   </span>
                 </div>
-                {/* <button className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5">
-                Xem thêm
-              </button> */}
+                <Link
+                  href="#cake"
+                  className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5 text-base uppercase"
+                >
+                  Xem thêm
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -174,8 +180,11 @@ export default function HomePage() {
       </div>
 
       <div
+        id="menu"
         className={`${
-          isMin500px ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4" : "w-full px-[30px]"
+          isMin500px
+            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+            : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
@@ -186,7 +195,10 @@ export default function HomePage() {
             <div className=" uppercase text-center">About COFFEE</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
-            <div>
+            <div className="text-[#c9ab81] uppercase">
+              <b>Vietnamese Coffee</b>
+            </div>
+            <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Black Coffee</b>
                 <div
@@ -201,7 +213,7 @@ export default function HomePage() {
                 Cà phê đen, nước đường
               </span>
             </div>
-            <div>
+            <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Milk Coffee</b>
                 <div
@@ -214,7 +226,7 @@ export default function HomePage() {
               </div>
               <span className="text-base leading-tight">Cà phê, Sữa đặc</span>
             </div>
-            <div>
+            <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>White Coffee</b>
                 <div
@@ -229,56 +241,10 @@ export default function HomePage() {
                 Cà phê, Sữa đặc, Sữa tươi không đường
               </span>
             </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Salted Coffee</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>50</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Cà phê, Sữa đặc, Sữa tươi, Kem muối
-              </span>
+            <div className="text-[#c9ab81] uppercase">
+              <b>Italian Coffee</b>
             </div>
-            <div>
-              <div
-                className={`flex items-center gap-x-4 ${
-                  !isMin350px ? "whitespace-nowrap" : "whitespace-normal"
-                } `}
-              >
-                <b>Coconut Milk Coffee</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>50</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Espresso, Sữa đặc, Nước cốt dừa
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Truffle Coffee</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>50</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Espresso, Nấm Truffle trắng, Sữa đặc, Kem muối
-              </span>
-            </div>
-            <div>
+            <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Espresso</b>
                 <div
@@ -291,7 +257,7 @@ export default function HomePage() {
               </div>
               <span className="text-base leading-tight">Cà phê Espresso</span>
             </div>
-            <div>
+            <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Americano</b>
                 <div
@@ -304,7 +270,7 @@ export default function HomePage() {
               </div>
               <span className="text-base leading-tight">Cà phê, Nước lọc</span>
             </div>
-            <div>
+            <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Cappuccino</b>
                 <div
@@ -319,7 +285,7 @@ export default function HomePage() {
                 Espresso, Sữa tươi, Váng sữa
               </span>
             </div>
-            <div>
+            <div className="pl-[20px]">
               <div
                 className={`flex items-center gap-x-4 ${
                   !isMin350px ? "whitespace-nowrap" : "whitespace-normal"
@@ -338,7 +304,7 @@ export default function HomePage() {
                 Espresso, Sữa yến mạch, Váng sữa
               </span>
             </div>
-            <div>
+            <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Latte</b>
                 <div
@@ -353,7 +319,7 @@ export default function HomePage() {
                 Espresso, Sữa tươi, Váng sữa
               </span>
             </div>
-            <div>
+            <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Latte Oat milk</b>
                 <div
@@ -384,7 +350,7 @@ export default function HomePage() {
       <div
         className={`${
           isMin500px
-            ? "w-full mx-auto lg:w-11/12 2xl:w-3/4"
+            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
             : "w-full lg:px-[30px]"
         } mt-[100px] h-[600px] md:h-[800px] relative`}
       >
@@ -395,7 +361,7 @@ export default function HomePage() {
           sizes="100vw"
           className="w-full h-full object-cover"
         />
-        <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-50">
+        <div className="absolute w-full h-full top-0 left-0 ">
           <div className="text-[19px] text-white text-left leading-normal px-[15px] py-[10px]">
             <b>Life is like coffee, the darker it gets, the more it energize</b>
           </div>
@@ -406,18 +372,14 @@ export default function HomePage() {
         <div
           className={`${
             isMin500px
-              ? "w-full mx-auto lg:w-11/12 2xl:w-3/4"
-              : "w-full lg:px-[30px]"
+              ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+              : "w-full px-[30px]"
           } mt-[100px] grid grid-cols-1 lg:grid-cols-2 grid-flow-dense gap-y-[50px] gap-x-[50px]`}
           style={{
             direction: "rtl",
           }}
         >
-          <div
-            className={`flex flex-col justify-center ${
-              isMin500px ? "w-2/3 lg:w-full" : "w-full px-[30px]"
-            } mx-auto`}
-          >
+          <div className={`flex flex-col justify-center`}>
             <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
               Where Coffee Meet Creativy
             </div>
@@ -455,11 +417,12 @@ export default function HomePage() {
               </div>
               <div>
                 <div
-                  className={`flex items-center flex-row-reverse gap-x-4 ${
-                    !isMin350px ? "whitespace-nowrap" : "whitespace-normal"
-                  } `}
+                  className={`flex items-center flex-row-reverse gap-x-4  whitespace-nowrap `}
                 >
-                  <b>Coconut Brew Twist </b>
+                  <b>
+                    Coconut Brew{" "}
+                    <br className={`${isMin350px ? "" : "hidden"}`} /> Twist{" "}
+                  </b>
                   <div
                     className="w-full
                 h-[5px] "
@@ -505,7 +468,7 @@ export default function HomePage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-50">
+              <div className="absolute w-full h-full top-0 left-0">
                 <div className="text-[19px] text-white text-left leading-normal px-[15px] py-[10px]">
                   <b>Coconut Brew Twist</b>
                 </div>
@@ -517,12 +480,233 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4" : "w-full px-[30px]"
+          isMin500px
+            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+            : "w-full px-[30px]"
+        } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]  pb-[120px]`}
+      >
+        <div className="flex flex-col justify-center items-center">
+          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            Stay Creamy Keep Refresh
+          </div>
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+            <div className="uppercase">CARAMEL Salted CREAM</div>
+          </div>
+          <div className="text-[19px] text-white leading-normal text-center">
+            Kem muối, Espresso, Sữa tươi, Caramel
+          </div>
+          <div className="text-[19px] text-white leading-normal text-center">
+            <b>50</b>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="flex justify-end">
+            <Image
+              src="/assets/images/Beverage/CaramelSatedCream2.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="object-cover w-3/4 md:w-[calc(50%+20px)] h-full"
+            />
+          </div>
+          <div className="absolute top-[90px] left-0 w-full h-full">
+            <Image
+              src="/assets/images/Beverage/CaramelSatedCream1.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="object-cover w-3/4 md:w-[calc(50%+20px)] h-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div
+          className={`${
+            isMin500px
+              ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+              : "w-full px-[30px]"
+          } mt-[100px] grid grid-cols-1 lg:grid-cols-2 grid-flow-dense gap-y-[50px] gap-x-[50px]`}
+          style={{
+            direction: "rtl",
+          }}
+        >
+          <div className="flex flex-col justify-center">
+            {/* <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+              Where Coffee Meet Creativy
+            </div> */}
+            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex  gap-x-4 justify-center items-center text-center">
+              <div className="uppercase text-center">FOAMY DELIGHT</div>
+            </div>
+            <div className="text-[19px] text-white leading-normal text-left mt-[20px] w-full flex flex-col gap-y-[15px]">
+              <div>
+                <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
+                  <b>Salted Coffee</b>
+                  <div
+                    className="w-full
+                h-[5px] "
+                  ></div>
+                  <span>
+                    <b>50</b>
+                  </span>
+                </div>
+                <span className="text-base text-left leading-tight">
+                  Cà phê, Sữa đặc, Sữa tươi, Kem muối
+                </span>
+              </div>
+              <div>
+                <div
+                  className={`flex items-center flex-row-reverse gap-x-4 whitespace-nowrap `}
+                >
+                  <b>
+                    Coconut Milk{" "}
+                    <br className={`${isMin350px ? "" : "hidden"}`} /> Coffee
+                  </b>
+                  <div
+                    className="w-full
+                h-[5px] "
+                  ></div>
+                  <span>
+                    <b>50</b>
+                  </span>
+                </div>
+                <span className="text-base text-left leading-tight">
+                  Espresso, Sữa đặc, Nước cốt dừa
+                </span>
+              </div>
+              <div>
+                <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
+                  <b>Truffle Coffee</b>
+                  <div
+                    className="w-full
+                h-[5px] "
+                  ></div>
+                  <span>
+                    <b>50</b>
+                  </span>
+                </div>
+                <span className="text-base text-left leading-tight">
+                  Espresso, Nấm Truffle trắng, Sữa đặc, Kem muối
+                </span>
+              </div>
+              <div>
+                <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
+                  <b>Pandan Fores</b>
+                  <div
+                    className="w-full
+                h-[5px] "
+                  ></div>
+                  <span>
+                    <b>50</b>
+                  </span>
+                </div>
+                <span className="text-base leading-tight">
+                  Kem muối, Espresso, Sữa lá dứa
+                </span>
+              </div>
+              <div>
+                <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
+                  <b>Choco Silk</b>
+                  <div
+                    className="w-full
+                h-[5px] "
+                  ></div>
+                  <span>
+                    <b>50</b>
+                  </span>
+                </div>
+                <span className="text-base leading-tight">
+                  Dalgona, Espresso, Sữa tươi, Chocolate
+                </span>
+              </div>
+              <div>
+                <div
+                  className={`flex items-center flex-row-reverse gap-x-4 ${
+                    !isMin300px ? "whitespace-nowrap" : "whitespace-normal"
+                  } `}
+                >
+                  <b>Dalgona Coffee</b>
+                  <div
+                    className="w-full
+                h-[5px] "
+                  ></div>
+                  <span>
+                    <b>50</b>
+                  </span>
+                </div>
+                <span className="text-base leading-tight">
+                  Dalgona, Espresso, Sữa tươi
+                </span>
+              </div>
+              <div>
+                <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
+                  <b>Oreo Mint</b>
+                  <div
+                    className="w-full
+                h-[5px] "
+                  ></div>
+                  <span>
+                    <b>50</b>
+                  </span>
+                </div>
+                <span className="text-base leading-tight">
+                  Bánh quy Oreo, Cacao, Sữa, Chocolate, Kem muối
+                </span>
+              </div>
+              <div>
+                <div
+                  className={`flex items-center flex-row-reverse gap-x-4 ${
+                    !isMin300px ? "whitespace-nowrap" : "whitespace-normal"
+                  } `}
+                >
+                  <b>Milk Tea Blend</b>
+                  <div
+                    className="w-full
+                h-[5px] "
+                  ></div>
+                  <span>
+                    <b>50</b>
+                  </span>
+                </div>
+                <span className="text-base leading-tight">
+                  Trà sữa lài, Sữa đặc, Dalgona, Trân Châu Trắng
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full h-full">
+            <div className="relative">
+              <div className="h-full">
+                <Image
+                  src="/assets/images/Beverage/StayCreamyKeepRefresh.png"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-50">
+                <div className="text-[19px] text-white text-left leading-normal px-[15px] py-[10px]">
+                  <b>Coconut Brew Twist</b>
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`${
+          isMin500px
+            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+            : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
           <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Boost your mood with the Fruits
+            Boost Your Mood With The Fruits
           </div>
           <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
             <div className="uppercase text-center">FRUIT TEA & MIX</div>
@@ -530,7 +714,10 @@ export default function HomePage() {
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
             <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Love In Idleness</b>
+                <b>
+                  Love In <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
+                  Idleness
+                </b>
                 <div
                   className="w-full
                 h-[5px] "
@@ -545,7 +732,10 @@ export default function HomePage() {
             </div>
             <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Cinamon Dolce</b>
+                <b>
+                  Cinamon <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
+                  Dolce
+                </b>
                 <div
                   className="w-full
                 h-[5px] "
@@ -625,7 +815,10 @@ export default function HomePage() {
             </div>
             <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Glowing Essence</b>
+                <b>
+                  Glowing <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
+                  Essence
+                </b>
                 <div
                   className="w-full
                 h-[5px] "
@@ -758,15 +951,11 @@ export default function HomePage() {
         <div
           className={`${
             isMin500px
-              ? "w-full mx-auto lg:w-11/12 2xl:w-3/4"
-              : "w-full lg:px-[30px]"
+              ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+              : "w-full px-[30px]"
           } mt-[100px] grid grid-cols-1 gap-y-[50px] gap-x-[50px]`}
         >
-          <div
-            className={`flex flex-col justify-center ${
-              isMin500px ? "w-2/3 lg:w-full" : "w-full px-[30px]"
-            } mx-auto`}
-          >
+          <div className={`flex flex-col justify-center`}>
             <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
               Healthy Special
             </div>
@@ -811,7 +1000,7 @@ export default function HomePage() {
         <div
           className={`grid grid-cols-1 gap-y-[50px] lg:grid-cols-2 gap-y-[50px] gap-x-[30px] mt-[30px] ${
             isMin500px
-              ? "w-full mx-auto lg:w-11/12 2xl:w-3/4"
+              ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
               : "w-full lg:px-[30px]"
           }`}
         >
@@ -848,174 +1037,9 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4" : "w-full px-[30px]"
-        } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]  pb-[120px]`}
-      >
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Stay Creamy Keep Refresh
-          </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className="uppercase">CARAMEL SATED CREAM</div>
-          </div>
-          <div className="text-[19px] text-white leading-normal text-center">
-            Kem muối, Espresso, Sữa tươi, Caramel
-          </div>
-          <div className="text-[19px] text-white leading-normal text-center">
-            <b>50</b>
-          </div>
-        </div>
-        <div className="relative">
-          <div className="flex justify-end">
-            <Image
-              src="/assets/images/Beverage/CaramelSatedCream2.png"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="object-cover w-3/4 md:w-[calc(50%+20px)] h-full"
-            />
-          </div>
-          <div className="absolute top-[90px] left-0 w-full h-full">
-            <Image
-              src="/assets/images/Beverage/CaramelSatedCream1.png"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="object-cover w-3/4 md:w-[calc(50%+20px)] h-full"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div
-          className={`${
-            isMin500px
-              ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4"
-              : "w-full lg:px-[30px]"
-          } mt-[100px] grid grid-cols-1 lg:grid-cols-2 grid-flow-dense gap-y-[50px] gap-x-[50px]`}
-          style={{
-            direction: "rtl",
-          }}
-        >
-          <div className="flex flex-col justify-center px-[30px] lg:px-0">
-            {/* <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-              Where Coffee Meet Creativy
-            </div> */}
-            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex  gap-x-4 justify-center items-center text-center">
-              <div className="uppercase text-center">FOAMY DELIGHT</div>
-            </div>
-            <div className="text-[19px] text-white leading-normal text-left mt-[20px] w-full flex flex-col gap-y-[15px]">
-              <div>
-                <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
-                  <b>Pandan Fores</b>
-                  <div
-                    className="w-full
-                h-[5px] "
-                  ></div>
-                  <span>
-                    <b>50</b>
-                  </span>
-                </div>
-                <span className="text-base leading-tight">
-                  Kem muối, Espresso, Sữa lá dứa
-                </span>
-              </div>
-              <div>
-                <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
-                  <b>Choco Silk</b>
-                  <div
-                    className="w-full
-                h-[5px] "
-                  ></div>
-                  <span>
-                    <b>50</b>
-                  </span>
-                </div>
-                <span className="text-base leading-tight">
-                  Dalgona, Espresso, Sữa tươi, Chocolate
-                </span>
-              </div>
-              <div>
-                <div
-                  className={`flex items-center flex-row-reverse gap-x-4 ${
-                    !isMin300px ? "whitespace-nowrap" : "whitespace-normal"
-                  } `}
-                >
-                  <b>Dalgona Coffee</b>
-                  <div
-                    className="w-full
-                h-[5px] "
-                  ></div>
-                  <span>
-                    <b>50</b>
-                  </span>
-                </div>
-                <span className="text-base leading-tight">
-                  Dalgona, Espresso, Sữa tươi
-                </span>
-              </div>
-              <div>
-                <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
-                  <b>Oreo Mint</b>
-                  <div
-                    className="w-full
-                h-[5px] "
-                  ></div>
-                  <span>
-                    <b>50</b>
-                  </span>
-                </div>
-                <span className="text-base leading-tight">
-                  Bánh quy Oreo, Cacao, Sữa, Chocolate, Kem muối
-                </span>
-              </div>
-              <div>
-                <div
-                  className={`flex items-center flex-row-reverse gap-x-4 ${
-                    !isMin300px ? "whitespace-nowrap" : "whitespace-normal"
-                  } `}
-                >
-                  <b>Milk Tea Blend</b>
-                  <div
-                    className="w-full
-                h-[5px] "
-                  ></div>
-                  <span>
-                    <b>50</b>
-                  </span>
-                </div>
-                <span className="text-base leading-tight">
-                  Trà sữa lài, Sữa đặc, Dalgona, Trân Châu Trắng
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full h-full">
-            <div className="relative">
-              <div className="h-full">
-                <Image
-                  src="/assets/images/Beverage/StayCreamyKeepRefresh.png"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-50">
-                <div className="text-[19px] text-white text-left leading-normal px-[15px] py-[10px]">
-                  <b>Coconut Brew Twist</b>
-                </div>
-              </div> */}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        className={`${
-          isMin500px ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4" : "w-full px-[30px]"
+          isMin500px
+            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+            : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]  pb-[120px]`}
       >
         <div className="flex flex-col justify-center items-center">
@@ -1058,7 +1082,10 @@ export default function HomePage() {
             </div>
             <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Double Tropical</b>
+                <b>
+                  Double <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
+                  Tropical
+                </b>
                 <div
                   className="w-full
                 h-[5px] "
@@ -1097,7 +1124,9 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4" : "w-full px-[30px]"
+          isMin500px
+            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+            : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1  gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
@@ -1184,318 +1213,430 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div id="cake" className="mt-[70px] md:mt-[50px]">
-        <Swiper
-          // install Swiper modules
-          modules={[Autoplay]}
-          spaceBetween={50}
-          slidesPerView={1}
-          centeredSlides={true}
-          loop
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/BlackSwan.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Black Swan
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Bánh handmade tỉ mỉ với lớp lông vũ làm bằng Chocolate, phía
-                  trên được đổ lớp Glaze bóng, điểm xuyến bằng nhũ vàng ở cổ
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+
+      <div
+        id="cake"
+        className={`${
+          isMin500px
+            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+            : "w-full px-[30px]"
+        } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
+      >
+        <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
+          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            Enjoy Life, Eat Cake
+          </div>
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+            <div className="uppercase text-center">PASTRY PARADISE</div>
+          </div>
+          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Black Swan</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>250</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge,
+                Gold Leaf
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/Tiramisu.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Tiramisu
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Sự kết hợp hoàn hảo giữa "cà phê đậm đà" và "rượu Kahlua", phủ
-                  trên nó là "sốt Lava" sánh mịn, là điểm nhấn độc đáo, hòa
-                  quyện cùng từng lớp bánh mềm mại
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Tiramisu</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>159</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                Black sponge cake, Mascarpone cheese, Kahlua, Coffee and Whipped
+                cream
+              </span>
             </div>
-          </SwiperSlide>{" "}
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/RedVelvet.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Red Velvet
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Lớp bánh ẩm, mềm, kết hợp với Cream Chesse cùng với sốt Lava
-                  tạo nên các tầng hương vị ngọt và béo
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Red Velvet</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>159</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                Cream cheese, Sponge cake, Whipped cream
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/BerryMillecrepe.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Berry Millecrepe
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Bánh nổi bật với những lớp crepe mềm tan, đan xen với lớp kem
-                  cherry chua ngọt, kết hợp cùng các loại Berries Frozen
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>
+                  Berry <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
+                  Millecrepe
+                </b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>139</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                Cherry cream, Berries compote
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/Lychee-RoseSaintHonore.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Lychee - Rose Saint Honore
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Bánh được kết hợp với lớp mứt hoa hồng tươi, những cánh hoa
-                  được chọn lựa chế biến kỹ càng theo công thức đặc biệt của
-                  riêng Buttery. Vị chua ngọt của vải hoa hồng cùng với vẻ đẹp
-                  màu hồng nữ tính
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className={`flex items-center gap-x-4 whitespace-nowrap`}>
+                <b>
+                  Lychee - Rose <br className="block md:hidden" /> Saint Honore
+                </b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>149</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                Jasminie Cream, Rose Jam, Lychee, Rose Cream
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/DreamMo.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Dream "Mơ"
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Bánh được phủ 1 lớp tráng gương, chua ngọt và thơm ngon, điểm
-                  nhấn vài miếng Chocolate vàng kết hợp cùng hoa tươi.
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Dream "Mơ"</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>149</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                Apricot, Yuzu, Mousse dark choco
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/BerryLove.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Berry Love
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Bánh được bao bọc bởi lớp chocolate, phía trên được decor bằng
-                  trái cây tươi, những trái berry mọng nước, kết hợp với lớp kem
-                  béo và nhân dâu chua chua nhẹ
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Berry Love</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>149</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                Strawberry, Rasberry, Blackberry, White ganache monteé
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/BlossomLand.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Blosom Land
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Lớp ngoài của bánh được phun bơ Cacao, Matcha Cream đóng vai
-                  trò là hương vị nền kết hợp với Rasberry Jam
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Blosom Land</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>149</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                Matcha, Rasberry, Hojicha, White choco
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/SpringMalibu.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Spring Malibu
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Là sự kết hợp giữa xoài và thơm, cùng với vị ngọt của rượu
-                  Malibu và vị béo của kem. Mềm tan và béo nhẹ, chắc chắn sẽ
-                  mang lại trải nghiệm độc đáo cho vị giác
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Spring Malibu</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>139</b>
-                </div>
+                </span>
               </div>
+              <span className="text-base leading-tight">
+                Malibu, Mango, Pineapple, Coconut, White Chocolate
+              </span>
             </div>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              position: "relative",
-            }}
-          >
-            <Image
-              src="/assets/images/Cake/ChocoCream.jpg"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute w-full h-full top-0 left-0  bg-black bg-opacity-50">
-              <div
-                className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
-              >
-                <div className="text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center uppercase">
-                  Choco Cream
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
-                  Với lớp bánh quy Sô-cô-la mềm mịn, điểm xuyến bởi những quả
-                  cranberry tươi, phủ trên nó là lớp kem tươi siêu mịn, mang đến
-                  hương vị đậm đà và tan chảy trong miệng
-                </div>
-                <div className="mt-3 text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
+            <div>
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Choco Cream</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
                   <b>120</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Chocolate Sponge Cake, Cranberrry, Fresh Cream
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center w-full lg:w-1/2">
+          <Swiper
+            // install Swiper modules
+            modules={[Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            centeredSlides={true}
+            loop
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/Cake/BlackSwan.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
+                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
+                    <b>OUR SIGNATURE</b>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Black Swan</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh handmade tỉ mỉ với lớp lông vũ làm bằng Chocolate, phía
+                trên được đổ lớp Glaze bóng, điểm xuyến bằng nhũ vàng ở cổ
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>250</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/Cake/Tiramisu.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
+                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
+                    <b>BEST SELLER</b>
+                  </div>
+                </div>
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Tiramisu</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Sự kết hợp hoàn hảo giữa "cà phê đậm đà" và "rượu Kahlua", phủ
+                trên nó là "sốt Lava" sánh mịn, là điểm nhấn độc đáo, hòa quyện
+                cùng từng lớp bánh mềm mại
+              </div>
+              <div className="text-[19px] leading-normal text-center mt-[10px]">
+                <b>159</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/Cake/RedVelvet.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
+                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
+                    <b>BEST SELLER</b>
+                  </div>
+                </div>
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Red Velvet</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Lớp bánh ẩm, mềm, kết hợp với Cream Chesse cùng với sốt Lava tạo
+                nên các tầng hương vị ngọt và béo
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>159</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/BerryMillecrepe.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Berry Millecrepe</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh nổi bật với những lớp crepe mềm tan, đan xen với lớp kem
+                cherry chua ngọt, kết hợp cùng các loại Berries Frozen
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>139</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/Lychee-RoseSaintHonore.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Lychee - Rose Saint Honore</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh được kết hợp với lớp mứt hoa hồng tươi, những cánh hoa được
+                chọn lựa chế biến kỹ càng theo công thức đặc biệt của riêng
+                Buttery. Vị chua ngọt của vải hoa hồng cùng với vẻ đẹp màu hồng
+                nữ tính
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>149</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/DreamMo.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Dream "Mơ"</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh được phủ 1 lớp tráng gương, chua ngọt và thơm ngon, điểm
+                nhấn vài miếng Chocolate vàng kết hợp cùng hoa tươi.
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>149</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/BerryLove.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Berry Love</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Bánh được bao bọc bởi lớp chocolate, phía trên được decor bằng
+                trái cây tươi, những trái berry mọng nước, kết hợp với lớp kem
+                béo và nhân dâu chua chua nhẹ
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>149</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/BlossomLand.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Blosom Land</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Lớp ngoài của bánh được phun bơ Cacao, Matcha Cream đóng vai trò
+                là hương vị nền kết hợp với Rasberry Jam
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>149</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/SpringMalibu.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Spring Malibu</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Là sự kết hợp giữa xoài và thơm, cùng với vị ngọt của rượu
+                Malibu và vị béo của kem. Mềm tan và béo nhẹ, chắc chắn sẽ mang
+                lại trải nghiệm độc đáo cho vị giác
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>139</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/Cake/ChocoCream.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Choco Cream</b>
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                Với lớp bánh quy Sô-cô-la mềm mịn, điểm xuyến bởi những quả
+                cranberry tươi, phủ trên nó là lớp kem tươi siêu mịn, mang đến
+                hương vị đậm đà và tan chảy trong miệng
+              </div>
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>120</b>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
 
       <div className="w-full h-[600px] md:h-[800px] relative mt-[50px] md:mt-[100px]">
@@ -1535,7 +1676,9 @@ export default function HomePage() {
 
       <div
         className={`${
-          isMin500px ? "w-2/3 mx-auto md:w-11/12 2xl:w-3/4" : "w-full px-[30px]"
+          isMin500px
+            ? "w-2/3 mx-auto sm:w-11/12  2xl:w-3/4"
+            : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
