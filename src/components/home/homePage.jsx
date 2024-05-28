@@ -1453,7 +1453,7 @@ export default function HomePage() {
                 trên nó là "sốt Lava" sánh mịn, là điểm nhấn độc đáo, hòa quyện
                 cùng từng lớp bánh mềm mại
               </div>
-              <div className="text-[19px] leading-normal text-center mt-[10px]">
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>159</b>
               </div>
             </SwiperSlide>
