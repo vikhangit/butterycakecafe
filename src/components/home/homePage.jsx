@@ -36,13 +36,6 @@ export default function HomePage() {
   const isMin300px = useMediaQuery({ maxWidth: 300 });
   return (
     <div className="bg-[#0b1315] pb-[50px] lg:pb-[100px]">
-      <Image
-        src="/assets/images/logo.jpg"
-        width={0}
-        height={0}
-        sizes="100vw"
-        className="w-full h-full object-cover"
-      />
       <div id="intro">
         <Swiper
           // install Swiper modules
