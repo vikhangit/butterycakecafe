@@ -21,6 +21,9 @@ export const metadata = {
   metadataBase: new URL("https://butterycakecafe.com"),
   title: "Buttery Cake & Cafe",
   description: "Buttery Cake & Cafe",
+  icons: {
+    icon: "/assets/images/logo.jpg",
+  },
   openGraph: {
     title: "Buttery Cake & Cafe",
     description: "Buttery Cake & Cafe",
@@ -43,6 +46,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <AOSInit />
       <head>
+        <link rel="icon" href="/assets/images/logo.jpg" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
