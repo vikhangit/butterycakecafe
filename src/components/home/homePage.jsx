@@ -386,8 +386,8 @@ export default function HomePage() {
                 <b>Black Swan</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh handmade tỉ mỉ với lớp lông vũ làm bằng Chocolate, phía
-                trên được đổ lớp Glaze bóng, điểm xuyến bằng nhũ vàng ở cổ
+                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge,
+                Gold Leaf
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>250</b>
@@ -412,9 +412,8 @@ export default function HomePage() {
                 <b>Tiramisu</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Sự kết hợp hoàn hảo giữa "cà phê đậm đà" và "rượu Kahlua", phủ
-                trên nó là "sốt Lava" sánh mịn, là điểm nhấn độc đáo, hòa quyện
-                cùng từng lớp bánh mềm mại
+                Black sponge cake, Mascarpone cheese, Kahlua, Coffee and Whipped
+                cream
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>159</b>
@@ -439,8 +438,7 @@ export default function HomePage() {
                 <b>Red Velvet</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Lớp bánh ẩm, mềm, kết hợp với Cream Chesse cùng với sốt Lava tạo
-                nên các tầng hương vị ngọt và béo
+                Cream cheese, Sponge cake, Whipped cream
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>159</b>
@@ -460,8 +458,7 @@ export default function HomePage() {
                 <b>Berry Millecrepe</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh nổi bật với những lớp crepe mềm tan, đan xen với lớp kem
-                cherry chua ngọt, kết hợp cùng các loại Berries Frozen
+                Cherry cream, Berries compote
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>139</b>
@@ -481,10 +478,7 @@ export default function HomePage() {
                 <b>Lychee - Rose Saint Honore</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh được kết hợp với lớp mứt hoa hồng tươi, những cánh hoa được
-                chọn lựa chế biến kỹ càng theo công thức đặc biệt của riêng
-                Buttery. Vị chua ngọt của vải hoa hồng cùng với vẻ đẹp màu hồng
-                nữ tính
+                Jasminie Cream, Rose Jam, Lychee, Rose Cream
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>149</b>
@@ -504,8 +498,7 @@ export default function HomePage() {
                 <b>Dream "Mơ"</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh được phủ 1 lớp tráng gương, chua ngọt và thơm ngon, điểm
-                nhấn vài miếng Chocolate vàng kết hợp cùng hoa tươi.
+                Apricot, Yuzu, Mousse dark choco
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>149</b>
@@ -525,9 +518,7 @@ export default function HomePage() {
                 <b>Berry Love</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Bánh được bao bọc bởi lớp chocolate, phía trên được decor bằng
-                trái cây tươi, những trái berry mọng nước, kết hợp với lớp kem
-                béo và nhân dâu chua chua nhẹ
+                Strawberry, Rasberry, Blackberry, White ganache monteé
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>149</b>
@@ -547,8 +538,7 @@ export default function HomePage() {
                 <b>Blosom Land</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Lớp ngoài của bánh được phun bơ Cacao, Matcha Cream đóng vai trò
-                là hương vị nền kết hợp với Rasberry Jam
+                Matcha, Rasberry, Hojicha, White choco
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>149</b>
@@ -568,9 +558,7 @@ export default function HomePage() {
                 <b>Spring Malibu</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Là sự kết hợp giữa xoài và thơm, cùng với vị ngọt của rượu
-                Malibu và vị béo của kem. Mềm tan và béo nhẹ, chắc chắn sẽ mang
-                lại trải nghiệm độc đáo cho vị giác
+                Malibu, Mango, Pineapple, Coconut, White Chocolate
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>139</b>
@@ -590,9 +578,7 @@ export default function HomePage() {
                 <b>Choco Cream</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Với lớp bánh quy Sô-cô-la mềm mịn, điểm xuyến bởi những quả
-                cranberry tươi, phủ trên nó là lớp kem tươi siêu mịn, mang đến
-                hương vị đậm đà và tan chảy trong miệng
+                Chocolate Sponge Cake, Cranberrry, Fresh Cream
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>120</b>
