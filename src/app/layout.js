@@ -30,13 +30,13 @@ export const metadata = {
     type: "article",
     publishedTime: "2023-05-20",
     url: "https://butterycakecafe.com",
-    images: "/assets/images/logo.jpg",
+    images: "https://butterycakecafe.com/assets/images/logo.jpg",
   },
   twitter: {
     card: "summary_large_image",
     title: "Buttery Cake & Cafe",
     description: "Buttery Cake & Cafe",
-    images: "/assets/images/logo.jpg",
+    images: "https://butterycakecafe.com/assets/images/logo.jpg",
   },
   keywords: ["xay dung"],
 };
