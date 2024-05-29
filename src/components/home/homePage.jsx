@@ -1640,7 +1640,7 @@ export default function HomePage() {
             </div>
             <Link
               href={
-                "https://docs.google.com/forms/d/16CJ5c6X_AFhq7IlD9GgnvkASsWUuijKj6U1hMbRCPyQ/prefill"
+                "https://docs.google.com/forms/d/e/1FAIpQLScqCGqVdg_eHCeUcl-IjrfBAo8cSAT2EKJt5FQ_RWqMe7GaNA/viewform"
               }
               target="_blank"
               className="border text-base border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5 uppercase"
