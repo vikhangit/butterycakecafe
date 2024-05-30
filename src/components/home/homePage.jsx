@@ -35,7 +35,7 @@ export default function HomePage() {
   const isMin350px = useMediaQuery({ maxWidth: 350 });
   const isMin300px = useMediaQuery({ maxWidth: 300 });
   return (
-    <div className="bg-[#0b1315] pb-[50px] lg:pb-[100px]">
+    <div className="bg-[#0b1315] pb-[50px] ">
       <div id="intro">
         <Swiper
           // install Swiper modules
@@ -613,7 +613,7 @@ export default function HomePage() {
                 h-[5px]"
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>70</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -628,7 +628,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>75</b>
                 </span>
               </div>
               <span className="text-base leading-tight">Cà phê, Sữa đặc</span>
@@ -641,7 +641,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>75</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -659,7 +659,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>75</b>
                 </span>
               </div>
               <span className="text-base leading-tight">Cà phê Espresso</span>
@@ -672,7 +672,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>80</b>
                 </span>
               </div>
               <span className="text-base leading-tight">Cà phê, Nước lọc</span>
@@ -685,7 +685,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>90</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -704,7 +704,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -719,7 +719,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>90</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -734,7 +734,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -810,7 +810,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>85</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">Cà phê ủ lạnh</span>
@@ -823,7 +823,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>95</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -843,7 +843,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>100</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -862,7 +862,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>100</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -909,7 +909,7 @@ export default function HomePage() {
             Kem muối, Espresso, Sữa tươi, Caramel
           </div>
           <div className="text-[19px] text-white leading-normal text-center">
-            <b>50</b>
+            <b>95</b>
           </div>
         </div>
         <div className="relative">
@@ -959,7 +959,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>95</b>
                   </span>
                 </div>
                 <span className="text-base text-left leading-tight">
@@ -979,7 +979,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>95</b>
                   </span>
                 </div>
                 <span className="text-base text-left leading-tight">
@@ -994,7 +994,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>110</b>
                   </span>
                 </div>
                 <span className="text-base text-left leading-tight">
@@ -1003,13 +1003,13 @@ export default function HomePage() {
               </div>
               <div>
                 <div className="flex items-center flex-row-reverse gap-x-4 whitespace-nowrap">
-                  <b>Pandan Fores</b>
+                  <b>Pandan Forest</b>
                   <div
                     className="w-full
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>95</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -1024,7 +1024,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>95</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -1043,7 +1043,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>110</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -1058,7 +1058,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>110</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -1077,7 +1077,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>110</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -1132,7 +1132,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1150,7 +1150,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1165,7 +1165,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1180,7 +1180,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1202,7 +1202,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">Trà lài đác thơm</span>
@@ -1215,7 +1215,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1233,7 +1233,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1248,7 +1248,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>95</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1289,7 +1289,7 @@ export default function HomePage() {
                 Trà hoa dâm bụt, Trà lài, Táo xanh
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>50</b>
+                <b>95</b>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -1309,7 +1309,7 @@ export default function HomePage() {
                 Trà lài, Trà hoa dâm bụt, Bưởi hồng, Thơm, Quế
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>50</b>
+                <b>95</b>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -1329,7 +1329,7 @@ export default function HomePage() {
                 Trà xanh lài, Thơm, lá Basil, Dưa leo, Táo xanh, Thạch Hoa quê
               </div>
               <div className="text-base text-white leading-normal text-center mt-[10px]">
-                <b>50</b>
+                <b>95</b>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -1349,7 +1349,7 @@ export default function HomePage() {
                 Trà lài, Mứt xoài, Đào, Kem muối
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>50</b>
+                <b>95</b>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -1378,7 +1378,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>135</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -1394,7 +1394,7 @@ export default function HomePage() {
                 h-[5px] "
                   ></div>
                   <span>
-                    <b>50</b>
+                    <b>135</b>
                   </span>
                 </div>
                 <span className="text-base leading-tight">
@@ -1463,7 +1463,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>198</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1478,7 +1478,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>198</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1496,7 +1496,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>198</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1550,7 +1550,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>180</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1569,7 +1569,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>180</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1591,7 +1591,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>180</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1606,7 +1606,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>50</b>
+                  <b>180</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
@@ -1720,7 +1720,15 @@ export default function HomePage() {
           />
         </div>
       </div>
-
+      <div
+        className={`${
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
+        } mt-[50px] `}
+      >
+        <div className="text-[19px] text-white leading-normal text-center mt-[20px]">
+          All prices quoted in 1000 VND and subject to 8% VAT
+        </div>
+      </div>
       <button
         className="fixed bottom-[20px] right-[20px]  md:bottom-[50px] md:right-[50px] text-[#C9AB81] border border-[#C9AB81] rounded-full p-2 z-[9999999]"
         style={{ display: visible ? "" : "none" }}
