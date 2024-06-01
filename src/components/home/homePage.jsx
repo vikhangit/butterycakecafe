@@ -181,7 +181,7 @@ export default function HomePage() {
       </div>
 
       <div
-        id="menu"
+        id="cake"
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
@@ -683,7 +683,6 @@ export default function HomePage() {
         </div>
       </div>
       <div
-        id="cake"
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] flex items-start flex-col lg:flex-row-reverse gap-y-[50px] gap-x-[50px]`}
