@@ -707,7 +707,7 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge
+                100% Italian Truffle Mousse, Dark Choco Namalaka, Cacao Sponge
                 Cake, Gold Leaf
               </span>
             </div>
