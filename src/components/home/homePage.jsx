@@ -283,7 +283,7 @@ export default function HomePage() {
               </span>
             </div>
             <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>Bicolo</b>
+              <b>Bicolor</b>
               <div
                 className="w-full
                 h-[5px]"
