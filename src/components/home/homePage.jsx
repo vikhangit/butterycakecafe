@@ -317,7 +317,7 @@ export default function HomePage() {
           <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
             <div className=" uppercase text-center">BAKERY BLISS</div>
           </div>
-          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[10px]">
+          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[5px]">
             <div className="text-[#c9ab81] uppercase">
               <b>Scone</b>
             </div>
