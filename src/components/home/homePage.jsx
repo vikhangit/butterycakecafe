@@ -32,6 +32,7 @@ export default function HomePage() {
   window.addEventListener("scroll", toggleVisible);
 
   const isMin500px = useMediaQuery({ minWidth: 500 });
+  const isMax500px = useMediaQuery({ maxWidth: 500 });
   const isMin350px = useMediaQuery({ maxWidth: 350 });
   const isMin300px = useMediaQuery({ maxWidth: 300 });
   return (
@@ -180,6 +181,508 @@ export default function HomePage() {
       </div>
 
       <div
+        id="menu"
+        className={`${
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
+        } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
+      >
+        <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
+          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            Our Signature
+          </div>
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+            <div className=" uppercase text-center">CROISSANT</div>
+          </div>
+          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
+            <div className="flex items-center gap-x-4 whitespace-nowrap">
+              <b>Plain Croissant</b>
+              <div
+                className="w-full
+                h-[5px]"
+              ></div>
+              <span>
+                <b>59</b>
+              </span>
+            </div>
+            <div className="flex items-center gap-x-4 whitespace-nowrap">
+              <b>
+                Mini Plain <br className={isMin350px ? "" : "hidden"} />{" "}
+                Croisant
+              </b>
+              <div
+                className="w-full
+                h-[5px]"
+              ></div>
+              <span>
+                <b>20</b>
+              </span>
+            </div>
+            <div className="flex items-center gap-x-4 whitespace-nowrap">
+              <b>
+                Mini Truffle <br className={isMin350px ? "" : "hidden"} />{" "}
+                Croissant
+              </b>
+              <div
+                className="w-full
+                h-[5px]"
+              ></div>
+              <span>
+                <b>59</b>
+              </span>
+            </div>
+            <div className="flex items-center gap-x-4 whitespace-nowrap">
+              <b>
+                Salted Egg <br className={isMin300px ? "" : "hidden"} /> With{" "}
+                <br
+                  className={
+                    isMax500px ? (isMin300px ? "hidden" : "") : "hidden"
+                  }
+                />{" "}
+                Pork <br className={isMin300px ? "" : "hidden"} /> Floss
+              </b>
+              <div
+                className="w-full
+                h-[5px]"
+              ></div>
+              <span>
+                <b>98/pcs</b>
+              </span>
+            </div>
+            <div className="flex items-center gap-x-4 whitespace-nowrap">
+              <b>
+                Coconut <br className={isMin300px ? "" : "hidden"} /> Pandan
+              </b>
+              <div
+                className="w-full
+                h-[5px]"
+              ></div>
+              <span>
+                <b>98/pcs</b>
+              </span>
+            </div>
+            <div className="flex items-center gap-x-4 whitespace-nowrap">
+              <b>
+                Thai Red <br className={isMin350px ? "" : "hidden"} /> Milk Tea
+              </b>
+              <div
+                className="w-full
+                h-[5px]"
+              ></div>
+              <span>
+                <b>98/pcs</b>
+              </span>
+            </div>
+            <div className="flex items-center gap-x-4 whitespace-nowrap">
+              <b>Bailey Praline</b>
+              <div
+                className="w-full
+                h-[5px]"
+              ></div>
+              <span>
+                <b>98/pcs</b>
+              </span>
+            </div>
+            <div className="flex items-center gap-x-4 whitespace-nowrap">
+              <b>Bicolo</b>
+              <div
+                className="w-full
+                h-[5px]"
+              ></div>
+              <span>
+                <b>69/pcs</b>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="w-full lg:w-1/2">
+          <Image
+            src="/assets/images/bake/crosaint.jpg"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <div
+        className={`${
+          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
+        } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
+      >
+        <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
+          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            Bake The World A Better Place
+          </div>
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+            <div className=" uppercase text-center">BAKERY BLISS</div>
+          </div>
+          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
+            <div className="text-[#c9ab81] uppercase">
+              <b>Scone</b>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Set Scone</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>99</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
+                <b>Setr Flavor</b>
+                <div
+                  className="w-full
+                h-[5px] "
+                ></div>
+                <span>
+                  <b>129</b>
+                </span>
+              </div>
+              <span className="text-base leading-tight">
+                Earl Grey/ Matcha/ Cafe
+              </span>
+            </div>
+            <div className="text-[#c9ab81] uppercase">
+              <b>Madeleine</b>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Original</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Almond</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Cranberry</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Creamcheese</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Chocochip</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>
+                  Set <br className={isMin300px ? "" : "hidden"} /> Madeleine
+                </b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>99/3pcs</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>
+                  Set <br className={isMin300px ? "" : "hidden"} /> Madeleine
+                </b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>99/3pcs</b>
+                </span>
+              </div>
+            </div>
+
+            <div className="text-[#c9ab81] uppercase">
+              <b>Canelé</b>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Original</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Caramel</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>55</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Praline</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>55</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Rasberry</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>55</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Set Canelé</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>139/3pcs</b>
+                </span>
+              </div>
+            </div>
+
+            <div className="text-[#c9ab81] uppercase">
+              <b>Financier</b>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Original</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>35</b>
+                </span>
+              </div>
+            </div>
+
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Rasberry</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Praline</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>
+                  Caramel <br className={isMin300px ? "" : "hidden"} /> Almond
+                </b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>55</b>
+                </span>
+              </div>
+            </div>
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>Chocochip</b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>45</b>
+                </span>
+              </div>
+            </div>
+
+            <div className="pl-[20px]">
+              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+                <b>
+                  Set <br className={isMin300px ? "" : "hidden"} /> Financier
+                </b>
+                <div
+                  className="w-full
+                h-[5px]"
+                ></div>
+                <span>
+                  <b>150/5pcs</b>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center w-full lg:w-1/2">
+          <Swiper
+            // install Swiper modules
+            modules={[Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            centeredSlides={true}
+            loop
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/bake/scone.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+                {/* <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
+                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
+                    <b>OUR SIGNATURE</b>
+                  </div>
+                </div> */}
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Scone</b>
+              </div>
+
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>99</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/bake/madeleine.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Madeleine</b>
+              </div>
+
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>150/5pcs</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="relative">
+                <Image
+                  src="/assets/images/bake/canele.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Canelé</b>
+              </div>
+
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>139/3pcs</b>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div>
+                <Image
+                  src="/assets/images/bake/financier.jpg"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
+                <b>Financier</b>
+              </div>
+
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
+                <b>150/5pcs</b>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+      <div
         id="cake"
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
@@ -205,8 +708,8 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge,
-                Gold Leaf
+                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge
+                Cake, Gold Leaf
               </span>
             </div>
             <div>
@@ -221,7 +724,7 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                Black sponge cake, Mascarpone cheese, Kahlua, Coffee and Whipped
+                Black sponge cake, Mascarpone Cheese, Kahlua, Coffee and Whipped
                 cream
               </span>
             </div>
@@ -237,7 +740,7 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                Cream cheese, Sponge cake, Whipped cream
+                Cream Cheese, Red Sponge Cake, Whipped Cream
               </span>
             </div>
             <div>
@@ -255,7 +758,7 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                Cherry cream, Berries compote
+                Cherry cream, Berries Compote
               </span>
             </div>
             <div>
@@ -272,7 +775,7 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                Jasminie Cream, Rose Jam, Lychee, Rose Cream
+                Jasminie Cream, Rose Cream. Rose Jam, Lychee Jam, Choux, Cookie
               </span>
             </div>
             <div>
@@ -287,7 +790,7 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                Apricot, Yuzu, Mousse dark choco
+                Apricot, Yuzu, Mousse Dark Choco
               </span>
             </div>
             <div>
@@ -302,12 +805,12 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                Strawberry, Rasberry, Blackberry, White ganache monteé
+                Strawberry, Rasberry, Blackberry, White Ganache Monteé
               </span>
             </div>
             <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Blosom Land</b>
+                <b>Blossom Land</b>
                 <div
                   className="w-full
                 h-[5px] "
@@ -317,7 +820,7 @@ export default function HomePage() {
                 </span>
               </div>
               <span className="text-base leading-tight">
-                Matcha, Rasberry, Hojicha, White choco
+                Matcha, Rasberry, Hojicha, White Choco
               </span>
             </div>
             <div>
@@ -386,8 +889,8 @@ export default function HomePage() {
                 <b>Black Swan</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge,
-                Gold Leaf
+                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge
+                Cake, Gold Leaf
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>250</b>
@@ -438,7 +941,7 @@ export default function HomePage() {
                 <b>Red Velvet</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Cream cheese, Sponge cake, Whipped cream
+                Cream Cheese, Red Sponge Cake, Whipped Cream
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>159</b>
@@ -478,7 +981,7 @@ export default function HomePage() {
                 <b>Lychee - Rose Saint Honore</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Jasminie Cream, Rose Jam, Lychee, Rose Cream
+                Jasminie Cream, Rose Cream. Rose Jam, Lychee Jam, Choux, Cookie
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>149</b>
@@ -535,7 +1038,7 @@ export default function HomePage() {
                 />
               </div>
               <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Blosom Land</b>
+                <b>Blossom Land</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
                 Matcha, Rasberry, Hojicha, White choco
@@ -592,7 +1095,7 @@ export default function HomePage() {
         id="menu"
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
-        } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
+        } mt-[50px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
           <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
