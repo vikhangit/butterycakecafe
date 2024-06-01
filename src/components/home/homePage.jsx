@@ -837,7 +837,7 @@ export default function HomePage() {
                 Malibu, Mango, Pineapple, Coconut, White Chocolate
               </span>
             </div>
-            <div>
+            {/* <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Choco Cream</b>
                 <div
@@ -851,7 +851,7 @@ export default function HomePage() {
               <span className="text-base leading-tight">
                 Chocolate Sponge Cake, Cranberrry, Fresh Cream
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex items-center w-full lg:w-1/2">
@@ -1066,7 +1066,7 @@ export default function HomePage() {
                 <b>139</b>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div>
                 <Image
                   src="/assets/images/Cake/ChocoCream.jpg"
@@ -1085,7 +1085,7 @@ export default function HomePage() {
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>120</b>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>
