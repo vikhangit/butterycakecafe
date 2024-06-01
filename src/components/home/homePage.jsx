@@ -435,7 +435,7 @@ export default function HomePage() {
                 h-[5px]"
                 ></div>
                 <span>
-                  <b>99/3pcs</b>
+                  <b>150/5pcs</b>
                 </span>
               </div>
             </div>
