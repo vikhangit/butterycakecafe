@@ -184,7 +184,7 @@ export default function HomePage() {
         id="cake"
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
-        } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
+        } mt-[100px] flex items-center flex-col lg:flex-row-reverse gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
           <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
@@ -207,7 +207,7 @@ export default function HomePage() {
             <div className="flex items-center gap-x-4 whitespace-nowrap">
               <b>
                 Mini Plain <br className={isMin350px ? "" : "hidden"} />{" "}
-                Croisant
+                Croissant
               </b>
               <div
                 className="w-full
@@ -230,24 +230,7 @@ export default function HomePage() {
                 <b>59</b>
               </span>
             </div>
-            <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>
-                Salted Egg <br className={isMin300px ? "" : "hidden"} /> With{" "}
-                <br
-                  className={
-                    isMax500px ? (isMin300px ? "hidden" : "") : "hidden"
-                  }
-                />{" "}
-                Pork <br className={isMin300px ? "" : "hidden"} /> Floss
-              </b>
-              <div
-                className="w-full
-                h-[5px]"
-              ></div>
-              <span>
-                <b>98/pcs</b>
-              </span>
-            </div>
+
             <div className="flex items-center gap-x-4 whitespace-nowrap">
               <b>
                 Coconut <br className={isMin300px ? "" : "hidden"} /> Pandan
@@ -257,7 +240,7 @@ export default function HomePage() {
                 h-[5px]"
               ></div>
               <span>
-                <b>98/pcs</b>
+                <b>98</b>
               </span>
             </div>
             <div className="flex items-center gap-x-4 whitespace-nowrap">
@@ -269,7 +252,7 @@ export default function HomePage() {
                 h-[5px]"
               ></div>
               <span>
-                <b>98/pcs</b>
+                <b>98</b>
               </span>
             </div>
             <div className="flex items-center gap-x-4 whitespace-nowrap">
@@ -279,7 +262,7 @@ export default function HomePage() {
                 h-[5px]"
               ></div>
               <span>
-                <b>98/pcs</b>
+                <b>98</b>
               </span>
             </div>
             <div className="flex items-center gap-x-4 whitespace-nowrap">
@@ -289,7 +272,7 @@ export default function HomePage() {
                 h-[5px]"
               ></div>
               <span>
-                <b>69/pcs</b>
+                <b>69</b>
               </span>
             </div>
           </div>
@@ -319,7 +302,7 @@ export default function HomePage() {
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[5px]">
             <div className="text-[#c9ab81] uppercase">
-              <b>Scone</b>
+              <b>Scone 2 pieces</b>
             </div>
             <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
@@ -335,7 +318,7 @@ export default function HomePage() {
             </div>
             <div className="pl-[20px]">
               <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Setr Flavor</b>
+                <b>Set Flavor</b>
                 <div
                   className="w-full
                 h-[5px] "
@@ -421,7 +404,7 @@ export default function HomePage() {
                 h-[5px]"
                 ></div>
                 <span>
-                  <b>99/3pcs</b>
+                  <b>99</b>
                 </span>
               </div>
             </div>
@@ -435,7 +418,7 @@ export default function HomePage() {
                 h-[5px]"
                 ></div>
                 <span>
-                  <b>150/5pcs</b>
+                  <b>150</b>
                 </span>
               </div>
             </div>
@@ -499,7 +482,7 @@ export default function HomePage() {
                 h-[5px]"
                 ></div>
                 <span>
-                  <b>139/3pcs</b>
+                  <b>139</b>
                 </span>
               </div>
             </div>
@@ -581,7 +564,7 @@ export default function HomePage() {
                 h-[5px]"
                 ></div>
                 <span>
-                  <b>150/5pcs</b>
+                  <b>150</b>
                 </span>
               </div>
             </div>
@@ -640,7 +623,7 @@ export default function HomePage() {
               </div>
 
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>150/5pcs</b>
+                <b>150</b>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -658,7 +641,7 @@ export default function HomePage() {
               </div>
 
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>139/3pcs</b>
+                <b>139</b>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -676,7 +659,7 @@ export default function HomePage() {
               </div>
 
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>150/5pcs</b>
+                <b>150</b>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -888,7 +871,7 @@ export default function HomePage() {
                 <b>Black Swan</b>
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                100% Italian Truffle Mosse, Dark Choco Namalaka, Cacao Sponge
+                100% Italian Truffle Mousse, Dark Choco Namalaka, Cacao Sponge
                 Cake, Gold Leaf
               </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
