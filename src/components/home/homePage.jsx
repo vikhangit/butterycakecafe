@@ -395,9 +395,11 @@ export default function HomePage() {
               </div>
             </div>
             <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>
-                  Set <br className={isMin300px ? "" : "hidden"} /> Madeleine
+                  Set
+                  <br className={isMin300px ? "" : "hidden"} />
+                  Madeleine
                 </b>
                 <div
                   className="w-full
@@ -407,11 +409,14 @@ export default function HomePage() {
                   <b>99</b>
                 </span>
               </div>
+              <span className="text-base leading-tight">3 pieces</span>
             </div>
             <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>
-                  Set <br className={isMin300px ? "" : "hidden"} /> Madeleine
+                  Set
+                  <br className={isMin300px ? "" : "hidden"} />
+                  Madeleine
                 </b>
                 <div
                   className="w-full
@@ -421,6 +426,7 @@ export default function HomePage() {
                   <b>150</b>
                 </span>
               </div>
+              <span className="text-base leading-tight">5 pieces</span>
             </div>
 
             <div className="text-[#c9ab81] uppercase">
@@ -475,7 +481,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>Set Canelé</b>
                 <div
                   className="w-full
@@ -485,6 +491,7 @@ export default function HomePage() {
                   <b>139</b>
                 </span>
               </div>
+              <span className="text-base leading-tight">3 pieces</span>
             </div>
 
             <div className="text-[#c9ab81] uppercase">
@@ -555,9 +562,11 @@ export default function HomePage() {
             </div>
 
             <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
+              <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>
-                  Set <br className={isMin300px ? "" : "hidden"} /> Financier
+                  Set
+                  <br className={isMin300px ? "" : "hidden"} />
+                  Financier
                 </b>
                 <div
                   className="w-full
@@ -567,6 +576,7 @@ export default function HomePage() {
                   <b>150</b>
                 </span>
               </div>
+              <span className="text-base leading-tight">5 pieces</span>
             </div>
           </div>
         </div>
@@ -603,7 +613,9 @@ export default function HomePage() {
               <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
                 <b>Scone</b>
               </div>
-
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                2 pieces
+              </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>99</b>
               </div>
@@ -621,7 +633,9 @@ export default function HomePage() {
               <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
                 <b>Madeleine</b>
               </div>
-
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                5 pieces
+              </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>150</b>
               </div>
@@ -639,7 +653,9 @@ export default function HomePage() {
               <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
                 <b>Canelé</b>
               </div>
-
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                3 pieces
+              </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>139</b>
               </div>
@@ -657,7 +673,9 @@ export default function HomePage() {
               <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
                 <b>Financier</b>
               </div>
-
+              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
+                5 pieces
+              </div>
               <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
                 <b>150</b>
               </div>
@@ -1627,7 +1645,7 @@ export default function HomePage() {
             <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>
-                  Cinamon <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
+                  Cinnamon <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
                   Dolce
                 </b>
                 <div
@@ -1788,7 +1806,7 @@ export default function HomePage() {
                 />
               </div>
               <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px]">
-                <b>CINAMON DOLCE</b>
+                <b>CINNAMON DOLCE</b>
               </div>
               <div className="text-base text-white leading-normal text-center mt-[10px]">
                 Trà lài, Trà hoa dâm bụt, Bưởi hồng, Thơm, Quế
