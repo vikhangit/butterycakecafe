@@ -121,12 +121,12 @@ export default function HomePage() {
                   </b>{" "}
                   - Explore Our World of Exquisite Drinks.
                 </div>
-                <Link
+                {/* <Link
                   href="#menu"
                   className="border border-[#c9ab81] texxt text-white text-sm px-[35px] py-[10px] mt-5 text-base uppercase"
                 >
                   Xem thêm
-                </Link>
+                </Link> */}
               </div>
             </div>
           </SwiperSlide>{" "}
@@ -168,19 +168,19 @@ export default function HomePage() {
                     bữa ăn ngon"
                   </span>
                 </div>
-                <Link
+                {/* <Link
                   href="#cake"
                   className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5 text-base uppercase"
                 >
                   Xem thêm
-                </Link>
+                </Link> */}
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
 
-      <div
+      {/* <div
         id="cake"
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
@@ -286,9 +286,9 @@ export default function HomePage() {
             className="w-full h-full object-cover"
           />
         </div>
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
@@ -582,7 +582,6 @@ export default function HomePage() {
         </div>
         <div className="flex items-center w-full lg:w-1/2">
           <Swiper
-            // install Swiper modules
             modules={[Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
@@ -604,11 +603,6 @@ export default function HomePage() {
                   sizes="100vw"
                   className="w-full h-full object-cover"
                 />
-                {/* <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
-                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
-                    <b>OUR SIGNATURE</b>
-                  </div>
-                </div> */}
               </div>
               <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
                 <b>Scone</b>
@@ -682,8 +676,9 @@ export default function HomePage() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </div>
-      <div
+      </div> */}
+
+      {/* <div
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] flex items-start flex-col lg:flex-row-reverse gap-y-[50px] gap-x-[50px]`}
@@ -838,21 +833,7 @@ export default function HomePage() {
                 Malibu, Mango, Pineapple, Coconut, White Chocolate
               </span>
             </div>
-            {/* <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Choco Cream</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>120</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Chocolate Sponge Cake, Cranberrry, Fresh Cream
-              </span>
-            </div> */}
+
           </div>
         </div>
         <div className="flex items-center w-full lg:w-1/2">
@@ -1067,29 +1048,9 @@ export default function HomePage() {
                 <b>139</b>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/ChocoCream.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Choco Cream</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Chocolate Sponge Cake, Cranberrry, Fresh Cream
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>120</b>
-              </div>
-            </SwiperSlide> */}
           </Swiper>
         </div>
-      </div>
+      </div> */}
 
       <div
         id="menu"
