@@ -79,10 +79,10 @@ export default function HomePage() {
                 <div className="text-[42px] md:text-[75px] text-[#c9ab81] text-center">
                   <b>BUTTERY'S MENU</b>
                 </div>
-                <div className="mt-3 text-white text-[20px] sm:text-[24px] md:text-[24px] justify-center items-center text-center leading-[33px]">
+                {/* <div className="mt-3 text-white text-[20px] sm:text-[24px] md:text-[24px] justify-center items-center text-center leading-[33px]">
                   "<b>Buttery cares about your health</b>" - Buttery quan tâm
                   đến sức khỏe của bạn.
-                </div>
+                </div> */}
                 {/* <button className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5">
                 Xem thêm
               </button> */}
@@ -1061,10 +1061,10 @@ export default function HomePage() {
       >
         <div className="flex flex-col justify-center items-center">
           <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Our Selection
+            Cà Phê Việt
           </div>
           <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className=" uppercase text-center">Cà Phê Việt</div>
+            <div className=" uppercase text-center">VIETNAMESE COFFEE</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
             <div>
@@ -1163,10 +1163,10 @@ export default function HomePage() {
         >
           <div className={`flex flex-col justify-center`}>
             <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-              Our Selection
+              Cà Phê Ý
             </div>
             <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex  gap-x-4 justify-center items-center text-center">
-              <div className="uppercase text-center">Cà Phê Ý</div>
+              <div className="uppercase text-center">ITALIAN COFFEE</div>
             </div>
             <div className="text-[19px] text-white leading-normal text-left mt-[20px] w-full flex flex-col gap-y-[15px]">
               <div>
@@ -1316,10 +1316,10 @@ export default function HomePage() {
         >
           <div className={`flex flex-col justify-center`}>
             <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-              Where Coffee Meet Creativy
+              Our Selection
             </div>
             <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex  gap-x-4 justify-center items-center text-center">
-              <div className="uppercase text-center">Our Selection</div>
+              <div className="uppercase text-center">SPECIAL COFFEE</div>
             </div>
             <div className="text-[19px] text-white leading-normal text-left mt-[20px] w-full flex flex-col gap-y-[15px]">
               <div>
@@ -1387,7 +1387,7 @@ export default function HomePage() {
                   } `}
                 >
                   <b>
-                    Caramel Satted{" "}
+                    Caramel Salted{" "}
                     <br className={`${isMin350px ? "" : "hidden"}`} /> Cream
                   </b>
                   <div
@@ -1533,7 +1533,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px]">
-                  <b>Caramel Satted Cream</b>
+                  <b>Caramel Salted Cream</b>
                 </div>
                 <div className="text-base text-white leading-normal text-center mt-[10px]">
                   Cà phê caramel kem muối
@@ -1595,10 +1595,10 @@ export default function HomePage() {
       >
         <div className="flex flex-col justify-center items-center">
           <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Boost Your Mood With The Fruits
+            Trà Trái Cây
           </div>
           <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className="uppercase text-center">Trà Trái Cây</div>
+            <div className="uppercase text-center">FRUIT TEA & MIX</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
             <div>
@@ -1793,10 +1793,10 @@ export default function HomePage() {
       >
         <div className="flex flex-col justify-center items-center">
           <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            The Fruits
+            Nước ép trái cây tuơi
           </div>
           <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className=" uppercase text-center">Nước ép trái cây tuơi</div>
+            <div className=" uppercase text-center">FRESH JUICE</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
             <div>
@@ -1844,10 +1844,10 @@ export default function HomePage() {
         >
           <div className={`flex flex-col justify-center`}>
             <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-              Healthy Special
+              Sữa chua trái cây tươi
             </div>
             <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-              <div className=" uppercase text-center">Sinh tố</div>
+              <div className=" uppercase text-center">YOGURT BOWL</div>
             </div>
             <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
               <div>
@@ -1956,10 +1956,10 @@ export default function HomePage() {
       >
         <div className="flex flex-col justify-center items-center">
           <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Opening Senses
+            Trà Tháp Nhiệt Đới
           </div>
           <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className=" uppercase text-center">Tháp Trà Nhiệt Đới</div>
+            <div className=" uppercase text-center">TROPICAL ICED TEA POT</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
             <div>
@@ -2041,16 +2041,16 @@ export default function HomePage() {
       >
         <div className="flex flex-col justify-center items-center">
           <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Just Hot
+            For 2
           </div>
           <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className=" uppercase text-center">Trà Bình</div>
+            <div className=" uppercase text-center">TEA POT</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
             <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
                 <b>
-                  Curtis Bluel <br className="block sm:hidden" /> Berry Blue
+                  Curtis Blue <br className="block sm:hidden" /> Berries
                 </b>
                 <div
                   className="w-full
@@ -2170,7 +2170,7 @@ export default function HomePage() {
                 h-[5px] "
                 ></div>
                 <span>
-                  <b>180</b>
+                  <b>190</b>
                 </span>
               </div>
               <span className="text-base leading-tight">
