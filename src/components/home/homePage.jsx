@@ -79,13 +79,6 @@ export default function HomePage() {
                 <div className="text-[42px] md:text-[75px] text-[#c9ab81] text-center">
                   <b>BUTTERY'S MENU</b>
                 </div>
-                {/* <div className="mt-3 text-white text-[20px] sm:text-[24px] md:text-[24px] justify-center items-center text-center leading-[33px]">
-                  "<b>Buttery cares about your health</b>" - Buttery quan tâm
-                  đến sức khỏe của bạn.
-                </div> */}
-                {/* <button className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5">
-                Xem thêm
-              </button> */}
               </div>
             </div>
           </SwiperSlide>
@@ -122,12 +115,6 @@ export default function HomePage() {
                   </b>{" "}
                   - Explore Our World of Exquisite Drinks.
                 </div>
-                {/* <Link
-                  href="#menu"
-                  className="border border-[#c9ab81] texxt text-white text-sm px-[35px] py-[10px] mt-5 text-base uppercase"
-                >
-                  Xem thêm
-                </Link> */}
               </div>
             </div>
           </SwiperSlide>{" "}
@@ -169,890 +156,11 @@ export default function HomePage() {
                     bữa ăn ngon"
                   </span>
                 </div>
-                {/* <Link
-                  href="#cake"
-                  className="border border-[#c9ab81] text-white text-sm px-[35px] py-[10px] mt-5 text-base uppercase"
-                >
-                  Xem thêm
-                </Link> */}
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
-
-      {/* <div
-        id="cake"
-        className={`${
-          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
-        } mt-[100px] flex items-center flex-col lg:flex-row-reverse gap-y-[50px] gap-x-[50px]`}
-      >
-        <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Our Signature
-          </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className=" uppercase text-center">CROISSANT</div>
-          </div>
-          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
-            <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>Plain Croissant</b>
-              <div
-                className="w-full
-                h-[5px]"
-              ></div>
-              <span>
-                <b>59</b>
-              </span>
-            </div>
-            <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>
-                Mini Plain <br className={isMin350px ? "" : "hidden"} />{" "}
-                Croissant
-              </b>
-              <div
-                className="w-full
-                h-[5px]"
-              ></div>
-              <span>
-                <b>20</b>
-              </span>
-            </div>
-            <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>
-                Mini Truffle <br className={isMin350px ? "" : "hidden"} />{" "}
-                Croissant
-              </b>
-              <div
-                className="w-full
-                h-[5px]"
-              ></div>
-              <span>
-                <b>59</b>
-              </span>
-            </div>
-
-            <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>
-                Coconut <br className={isMin300px ? "" : "hidden"} /> Pandan
-              </b>
-              <div
-                className="w-full
-                h-[5px]"
-              ></div>
-              <span>
-                <b>98</b>
-              </span>
-            </div>
-            <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>
-                Thai Red <br className={isMin350px ? "" : "hidden"} /> Milk Tea
-              </b>
-              <div
-                className="w-full
-                h-[5px]"
-              ></div>
-              <span>
-                <b>98</b>
-              </span>
-            </div>
-            <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>Bailey Praline</b>
-              <div
-                className="w-full
-                h-[5px]"
-              ></div>
-              <span>
-                <b>98</b>
-              </span>
-            </div>
-            <div className="flex items-center gap-x-4 whitespace-nowrap">
-              <b>Bicolor</b>
-              <div
-                className="w-full
-                h-[5px]"
-              ></div>
-              <span>
-                <b>69</b>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="w-full lg:w-1/2">
-          <Image
-            src="/assets/images/bake/crosaint.jpg"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div> */}
-
-      {/* <div
-        className={`${
-          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
-        } mt-[100px] flex items-center flex-col lg:flex-row gap-y-[50px] gap-x-[50px]`}
-      >
-        <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Bake The World A Better Place
-          </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className=" uppercase text-center">BAKERY BLISS</div>
-          </div>
-          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[5px]">
-            <div className="text-[#c9ab81] uppercase">
-              <b>Scone 2 pieces</b>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Set Scone</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>99</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Set Flavor</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>129</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Earl Grey/ Matcha/ Cafe
-              </span>
-            </div>
-            <div className="text-[#c9ab81] uppercase">
-              <b>Madeleine</b>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Original</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Almond</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Cranberry</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Creamcheese</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Chocochip</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>
-                  Set
-                  <br className={isMin300px ? "" : "hidden"} />
-                  Madeleine
-                </b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>99</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">3 pieces</span>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>
-                  Set
-                  <br className={isMin300px ? "" : "hidden"} />
-                  Madeleine
-                </b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>150</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">5 pieces</span>
-            </div>
-
-            <div className="text-[#c9ab81] uppercase">
-              <b>Canelé</b>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Original</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Caramel</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>55</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Praline</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>55</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Rasberry</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>55</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Set Canelé</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>139</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">3 pieces</span>
-            </div>
-
-            <div className="text-[#c9ab81] uppercase">
-              <b>Financier</b>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Original</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>35</b>
-                </span>
-              </div>
-            </div>
-
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Rasberry</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Praline</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>
-                  Caramel <br className={isMin300px ? "" : "hidden"} /> Almond
-                </b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>55</b>
-                </span>
-              </div>
-            </div>
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap capitalize">
-                <b>Chocochip</b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>45</b>
-                </span>
-              </div>
-            </div>
-
-            <div className="pl-[20px]">
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>
-                  Set
-                  <br className={isMin300px ? "" : "hidden"} />
-                  Financier
-                </b>
-                <div
-                  className="w-full
-                h-[5px]"
-                ></div>
-                <span>
-                  <b>150</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">5 pieces</span>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center w-full lg:w-1/2">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={50}
-            slidesPerView={1}
-            centeredSlides={true}
-            loop
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-          >
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/bake/scone.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Scone</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                2 pieces
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>99</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/bake/madeleine.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Madeleine</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                5 pieces
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>150</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/bake/canele.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Canelé</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                3 pieces
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>139</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/bake/financier.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Financier</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                5 pieces
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>150</b>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div> */}
-
-      {/* <div
-        className={`${
-          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
-        } mt-[100px] flex items-start flex-col lg:flex-row-reverse gap-y-[50px] gap-x-[50px]`}
-      >
-        <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Enjoy Life, Eat Cake
-          </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className="uppercase text-center">PASTRY PARADISE</div>
-          </div>
-          <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Black Swan</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>250</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                100% Italian Truffle Mousse, Dark Choco Namalaka, Cacao Sponge
-                Cake, Gold Leaf
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Tiramisu</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>159</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Black sponge cake, Mascarpone Cheese, Kahlua, Coffee and Whipped
-                cream
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Red Velvet</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>159</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Cream Cheese, Red Sponge Cake, Whipped Cream
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>
-                  Berry <br className={`${isMin300px ? "" : "hidden"}`} />{" "}
-                  Millecrepe
-                </b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>139</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Cherry cream, Berries Compote
-              </span>
-            </div>
-            <div>
-              <div className={`flex items-center gap-x-4 whitespace-nowrap`}>
-                <b>
-                  Lychee - Rose <br className="block md:hidden" /> Saint Honore
-                </b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>149</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Jasminie Cream, Rose Cream. Rose Jam, Lychee Jam, Choux, Cookie
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Dream "Mơ"</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>149</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Apricot, Yuzu, Mousse Dark Choco
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Berry Love</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>149</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Strawberry, Rasberry, Blackberry, White Ganache Monteé
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Blossom Land</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>149</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Matcha, Rasberry, Hojicha, White Choco
-              </span>
-            </div>
-            <div>
-              <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Spring Malibu</b>
-                <div
-                  className="w-full
-                h-[5px] "
-                ></div>
-                <span>
-                  <b>139</b>
-                </span>
-              </div>
-              <span className="text-base leading-tight">
-                Malibu, Mango, Pineapple, Coconut, White Chocolate
-              </span>
-            </div>
-
-          </div>
-        </div>
-        <div className="flex items-center w-full lg:w-1/2">
-          <Swiper
-            // install Swiper modules
-            modules={[Autoplay]}
-            spaceBetween={50}
-            slidesPerView={1}
-            centeredSlides={true}
-            loop
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-          >
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/Cake/BlackSwan.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
-                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
-                    <b>OUR SIGNATURE</b>
-                  </div>
-                </div>
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Black Swan</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                100% Italian Truffle Mousse, Dark Choco Namalaka, Cacao Sponge
-                Cake, Gold Leaf
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>250</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/Cake/Tiramisu.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
-                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
-                    <b>BEST SELLER</b>
-                  </div>
-                </div>
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Tiramisu</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Black sponge cake, Mascarpone cheese, Kahlua, Coffee and Whipped
-                cream
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>159</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative">
-                <Image
-                  src="/assets/images/Cake/RedVelvet.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-0 left-0 w-full h-full flex items-end">
-                  <div className="text-[19px] text-left leading-normal px-[15px] py-[10px]">
-                    <b>BEST SELLER</b>
-                  </div>
-                </div>
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Red Velvet</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Cream Cheese, Red Sponge Cake, Whipped Cream
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>159</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/BerryMillecrepe.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Berry Millecrepe</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Cherry cream, Berries compote
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>139</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/Lychee-RoseSaintHonore.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Lychee - Rose Saint Honore</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Jasminie Cream, Rose Cream. Rose Jam, Lychee Jam, Choux, Cookie
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>149</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/DreamMo.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Dream "Mơ"</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Apricot, Yuzu, Mousse dark choco
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>149</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/BerryLove.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Berry Love</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Strawberry, Rasberry, Blackberry, White ganache monteé
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>149</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/BlossomLand.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Blossom Land</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Matcha, Rasberry, Hojicha, White choco
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>149</b>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <Image
-                  src="/assets/images/Cake/SpringMalibu.jpg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-[19px] text-[#9C7C57] leading-normal text-center mt-[30px] uppercase">
-                <b>Spring Malibu</b>
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px] px-[10px] sm:px-[25px]">
-                Malibu, Mango, Pineapple, Coconut, White Chocolate
-              </div>
-              <div className="text-[19px] text-white leading-normal text-center mt-[10px]">
-                <b>139</b>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div> */}
-
       <div
         id="menu"
         className={`${
@@ -1060,10 +168,10 @@ export default function HomePage() {
         } mt-[50px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+          <div className="text-[#c9ab81] text-[19px] text-center font-normal">
             Cà Phê Việt
           </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex gap-x-4 justify-center items-center text-center">
             <div className=" uppercase text-center">VIETNAMESE COFFEE</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
@@ -1162,10 +270,10 @@ export default function HomePage() {
           }}
         >
           <div className={`flex flex-col justify-center`}>
-            <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            <div className="text-[#c9ab81] text-[19px] text-center font-normal">
               Cà Phê Ý
             </div>
-            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex  gap-x-4 justify-center items-center text-center">
+            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex  gap-x-4 justify-center items-center text-center">
               <div className="uppercase text-center">ITALIAN COFFEE</div>
             </div>
             <div className="text-[19px] text-white leading-normal text-left mt-[20px] w-full flex flex-col gap-y-[15px]">
@@ -1288,21 +396,6 @@ export default function HomePage() {
           sizes="100vw"
           className="w-full h-full object-cover"
         />
-        {/* <div className="absolute w-full h-full top-0 left-0 ">
-          <div className="text-[19px] text-white text-left leading-normal px-[15px] py-[10px]">
-            <b>
-              Life is like coffee, the darker it gets,
-              <br
-                className={
-                  isMin500px
-                    ? "hidden sm:block lg:hidden"
-                    : "hidden sm:block md:hidden"
-                }
-              />
-              the more it energize
-            </b>
-          </div>
-        </div> */}
       </div>
 
       <div>
@@ -1315,10 +408,10 @@ export default function HomePage() {
           }}
         >
           <div className={`flex flex-col justify-center`}>
-            <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            <div className="text-[#c9ab81] text-[19px] text-center font-normal">
               Our Selection
             </div>
-            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex  gap-x-4 justify-center items-center text-center">
+            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex  gap-x-4 justify-center items-center text-center">
               <div className="uppercase text-center">SPECIAL COFFEE</div>
             </div>
             <div className="text-[19px] text-white leading-normal text-left mt-[20px] w-full flex flex-col gap-y-[15px]">
@@ -1546,58 +639,16 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-      {/* <div
-        className={`${
-          isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
-        } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]  pb-[120px]`}
-      >
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Stay Creamy Keep Refresh
-          </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
-            <div className="uppercase">CARAMEL Salted CREAM</div>
-          </div>
-          <div className="text-[19px] text-white leading-normal text-center">
-            Kem muối, Espresso, Sữa tươi, Caramel
-          </div>
-          <div className="text-[19px] text-white leading-normal text-center">
-            <b>95</b>
-          </div>
-        </div>
-        <div className="relative">
-          <div className="flex justify-end">
-            <Image
-              src="/assets/images/Beverage/CaramelSatedCream2.png"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="object-cover w-3/4 md:w-[calc(50%+20px)] h-full"
-            />
-          </div>
-          <div className="absolute top-[90px] left-0 w-full h-full">
-            <Image
-              src="/assets/images/Beverage/CaramelSatedCream1.png"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="object-cover w-3/4 md:w-[calc(50%+20px)] h-full"
-            />
-          </div>
-        </div>
-      </div> */}
-
       <div
         className={`${
           isMin500px ? "mx-auto w-11/12  2xl:w-3/4" : "w-full px-[30px]"
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+          <div className="text-[#c9ab81] text-[19px] text-center font-normal">
             Trà Trái Cây
           </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex gap-x-4 justify-center items-center text-center">
             <div className="uppercase text-center">FRUIT TEA & MIX</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
@@ -1792,10 +843,10 @@ export default function HomePage() {
         } mt-[100px] grid grid-cols-1  gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
-            Nước ép trái cây tuơi
+          <div className="text-[#c9ab81] text-[19px] text-center font-normal">
+            Nước ép trái cây tươi
           </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex gap-x-4 justify-center items-center text-center">
             <div className=" uppercase text-center">FRESH JUICE</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
@@ -1843,10 +894,10 @@ export default function HomePage() {
           } mt-[100px] grid grid-cols-1 gap-y-[50px] gap-x-[50px]`}
         >
           <div className={`flex flex-col justify-center`}>
-            <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            <div className="text-[#c9ab81] text-[19px] text-center font-normal">
               Sữa chua trái cây tươi
             </div>
-            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex gap-x-4 justify-center items-center text-center">
               <div className=" uppercase text-center">YOGURT BOWL</div>
             </div>
             <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
@@ -1955,10 +1006,10 @@ export default function HomePage() {
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]  pb-[120px]`}
       >
         <div className="flex flex-col justify-center items-center">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+          <div className="text-[#c9ab81] text-[19px] text-center font-normal">
             Trà Tháp Nhiệt Đới
           </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex gap-x-4 justify-center items-center text-center">
             <div className=" uppercase text-center">TROPICAL ICED TEA POT</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
@@ -2040,10 +1091,10 @@ export default function HomePage() {
         } mt-[100px] grid grid-cols-1  gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+          <div className="text-[#c9ab81] text-[19px] text-center font-normal">
             For 2
           </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex gap-x-4 justify-center items-center text-center">
             <div className=" uppercase text-center">TEA POT</div>
           </div>
           <div className="text-[19px] text-white leading-normal mt-[20px] w-full flex flex-col gap-y-[15px]">
@@ -2192,10 +1243,10 @@ export default function HomePage() {
           <div
             className={`${"w-full sm:w-5/6 md:w-3/4 xl:w-1/2 mx-auto px-[30px] md:px-0"}  h-full flex justify-center items-center flex-col`}
           >
-            <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+            <div className="text-[#c9ab81] text-[19px] text-center font-normal">
               Write To Us
             </div>
-            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+            <div className="mt-[15px] text-[#c9ab81] text-[31px] sm:text-[48px] font-semibold leading-tight flex gap-x-4 justify-center items-center text-center">
               <div className=" uppercase text-center">CUSTOMER FEEDBACK</div>
             </div>
             <div className="text-[19px] text-center text-white leading-normal mt-[20px] w-full gap-y-[15px]">
@@ -2221,10 +1272,10 @@ export default function HomePage() {
         } mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-y-[50px] gap-x-[50px]`}
       >
         <div className="flex flex-col justify-center items-center">
-          <div className="text-[#c9ab81] text-[19px] text-miniver text-center">
+          <div className="text-[#c9ab81] text-[19px] text-center font-normal">
             Find Us
           </div>
-          <div className="mt-[15px] text-[#c9ab81] text-[31px] md:text-[48px] font-medium leading-tight flex gap-x-4 justify-center items-center text-center">
+          <div className="mt-[15px] text-[#c9ab81] text-[31px] md:text-[48px] font-semibold leading-tight flex gap-x-4 justify-center items-center text-center">
             <div className=" uppercase text-center">VISIT BUTTERY</div>
           </div>
           <div className="text-[19px] text-white leading-normal text-center mt-[20px]">
