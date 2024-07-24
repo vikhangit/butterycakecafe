@@ -966,7 +966,7 @@ export default function HomePage() {
                   </span>
                 </div>
                 <span className="text-base leading-tight">
-                  Sữa chua mứt thơm hạt đác macchiato
+                  Sữa chua mứt dâu tươi macchiato
                 </span>
               </div>
             </div>
