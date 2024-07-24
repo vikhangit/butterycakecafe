@@ -47,7 +47,7 @@ export default function HomePage() {
           centeredSlides={true}
           loop
           autoplay={{
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           onSwiper={(swiper) => console.log(swiper)}
@@ -549,7 +549,7 @@ export default function HomePage() {
               centeredSlides={true}
               loop
               autoplay={{
-                delay: 5000,
+                delay: 3000,
                 disableOnInteraction: false,
               }}
               onSwiper={(swiper) => console.log(swiper)}
@@ -747,7 +747,7 @@ export default function HomePage() {
             centeredSlides={true}
             loop
             autoplay={{
-              delay: 5000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             onSwiper={(swiper) => console.log(swiper)}
