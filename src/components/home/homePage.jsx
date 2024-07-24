@@ -1030,7 +1030,7 @@ export default function HomePage() {
             </div>
             <div>
               <div className="flex items-center gap-x-4 whitespace-nowrap">
-                <b>Pandan Logan</b>
+                <b>Pandan Longan</b>
                 <div
                   className="w-full
                 h-[5px] "
